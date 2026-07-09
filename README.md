@@ -58,4 +58,4 @@ CORE FEATURES (Recommended):
 - Sample Menu Option Screen
 ![Test Image](https://github.com/hannahgutierrez/LBYCPOB-FinalProject-AnimoTaftFoodBites/blob/master/projectvisuals/SampleMenu.png)
 - Sample Direction Option Screen
-![Test Image](https://imgur.com/a/P1ZoDji)
+![Test Image]((https://imgur.com/a/P1ZoDji))
