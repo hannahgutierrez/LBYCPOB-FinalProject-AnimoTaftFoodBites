@@ -15,7 +15,7 @@ BRIEF DESCRIPTION:
 If users will be able to check all the restaurants or cafes digitally, this would save their time and energy compared to physically looking for a place to eat. They would also be able to check all the necessary information about the food places such as visual of the location, operation hours, contact number, exact address, menu list, and direction option that will direct them to a google map where they follow the way to the target location. Often cafes and dining restaurants are object-oriented. Such that each establishment shared core characteristics (name, address, menu, and operating hours). Using OOP allows these models to have discrete objects. Which allows the design to be applicable, allowing the programmers to add multiple establishments, have updates, and more.
 
 CORE OOP CONCEPTS:
-- Encapsulation: <where/how>
+- Encapsulation: Bundling the attributes and the methods that can be used for the data, with the direct access to the state.
 - Inheritance: <where/how>
 - Polymorphism: <where/how>
 - Abstraction: <where/how>
