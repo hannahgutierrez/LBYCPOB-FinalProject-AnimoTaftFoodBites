@@ -35,6 +35,11 @@ USER STORIES (Recommended):
 - As a <user type>, I want to <action> so that <goal>.
 
 CORE FEATURES (Recommended):
-- <Feature 1>
-- <Feature 2>
-- <Feature 3>
+- Sample Main Screen
+![Test Image](https://github.com/hannahgutierrez/LBYCPOB-FinalProject-AnimoTaftFoodBites/blob/master/projectvisuals/MainScreen.png)
+- Sample Details of Restaurant Chosen
+![Test Image](https://github.com/hannahgutierrez/LBYCPOB-FinalProject-AnimoTaftFoodBites/blob/master/projectvisuals/SampleRestaurant.png)
+- Sample Menu Option Screen
+![Test Image](https://github.com/hannahgutierrez/LBYCPOB-FinalProject-AnimoTaftFoodBites/blob/master/projectvisuals/SampleMenu.png)
+- Sample Direction Option Screen
+![Test Image](https://github.com/hannahgutierrez/LBYCPOB-FinalProject-AnimoTaftFoodBites/blob/master/projectvisuals/SampleDirection.jpg)
