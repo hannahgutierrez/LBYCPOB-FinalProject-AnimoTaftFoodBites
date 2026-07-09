@@ -21,9 +21,14 @@ CORE OOP CONCEPTS:
 - Abstraction: <where/how>
 
 INITIAL CLASS IDEAS:
-- ClassName1: <responsibility>
-- ClassName2: <responsibility>
-- ClassName3: <responsibility>
+Interface
+Navigatable: getGoogleMapLink() provides the live directions through google map integration.
+RestaurantsCategorable: foodType() to show off the variation (chicken, fish, etc.) of food available.
+CafeCategorable: internetAvailability() to show if the place has available internet connection.
+
+Resources
+image folder that contains the restaurant logo image, the menu images, and the location front view.
+direction folder that contains text files that hold the link directed to google maps to provide the directions
 
 USER STORIES (Recommended):
 - As a <user type>, I want to <action> so that <goal>.
