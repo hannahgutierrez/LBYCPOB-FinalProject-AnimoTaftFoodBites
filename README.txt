@@ -18,7 +18,7 @@ CORE OOP CONCEPTS:
 - Encapsulation: Bundling the attributes and the methods that can be used for the data, with the direct access to the state.
 - Inheritance: FoodPlaces will serve as the parent class where all the restaurants will serve as the subclass that are required to have the field and methods such as having address, menu, directions, image, category, contact number, and operating hours.
 - Polymorphism: Each food place has the same features to be displayed, but different specific details as an output.
-- Abstraction: <where/how>
+- Abstraction: Hiding the process of sorting the category of food places and will simply display the final results.
 
 INITIAL CLASS IDEAS:
 Interface
