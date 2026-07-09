@@ -2,7 +2,7 @@ PROJECT TITLE:
 Animo Taft Food Bites: A Directory to The Food Places Around De La Salle University Manila Campus
 
 TEAM MEMBERS:
-BUNGAY, Alexia Gabrielle - <GitHub username>
+BUNGAY, Alexia Gabrielle - alexiabungay
 GUTIERREZ, Hannah Grace C. - hannahgutierrez
 
 PROBLEM STATEMENT & GOALS:
@@ -12,7 +12,7 @@ TARGET USER:
 The target beneficiaries of this project are all students, faculty, and staff of De La Salle University Manila Campus. The program will be beneficial in order to save time to walk around the area to choose where to eat. With all the features, planning where to eat and what to eat could lessen the hassle and stress of an individual. The users could also filter the food category based on their cravings and easily locate their destination with directions and a visual of the target location.
 
 BRIEF DESCRIPTION:
-<Summary of purpose and basic functionality>
+If users will be able to check all the restaurants or cafes digitally, this would save their time and energy compared to physically looking for a place to eat. They would also be able to check all the necessary information about the food places such as visual of the location, operation hours, contact number, exact address, menu list, and direction option that will direct them to a google map where they follow the way to the target location. Often cafes and dining restaurants are object-oriented. Such that each establishment shared core characteristics (name, address, menu, and operating hours). Using OOP allows these models to have discrete objects. Which allows the design to be applicable, allowing the programmers to add multiple establishments, have updates, and more.
 
 CORE OOP CONCEPTS:
 - Encapsulation: <where/how>
