@@ -30,17 +30,24 @@ INITIAL CLASS IDEAS:
 
 Class
 - DirectionMap: directs to the google map link using getGoogleMapLink().
+- MenuItem: The MenuItem class represents an individual food or beverage sold by a restaurant. Each menu item contains information such as its name, price, description, and availability. Restaurant owners can add, edit, or remove menu items through this class.
+- Announcement: The Announcement class stores updates posted by restaurant owners. These announcements inform students about newly opened restaurants, operating hour changes, special promotions, new menu items, or temporary closures.
+- RestaurantManager: The RestaurantManager class is responsible for managing all restaurant establishments registered in the system. It organizes restaurant records, performs searching and filtering, and updates the list of available establishments.
+- Review: submitReview(), editReview(), displayReview() The Review class allows students to provide ratings and comments about restaurants they have visited. Reviews help other users make informed dining decisions based on previous customer experiences.
 
 Abstract class
 - FoodPlace: OpeningStatus() to know the opening hours, contactInformation to contact the establishment for inquiries, loadLogo() to show the logo, establishmentName to know the restaurant name, displayMenu() to notify the user what available foods are in the said establishment, and Address to know its specific location.
 
 Inheritance or subclass
 - Establishment (The Establishment name differs on the restaurant or cafe name): an extension of FoodPlace.
+- Student : The Student class represents the regular users of the application. Students can browse restaurants, search food places by category, view menus, check announcements, and access directions to the selected establishment.
 
 Interface
 - Navigatable: getGoogleMapLink() provides the live directions through google map integration.
 - RestaurantsCategorable: foodType() to show off the variation (chicken, fish, etc.) of food available.
 - CafeCategorable: internetAvailability() to show if the place has available internet connection.
+- Manageable: add(), edit(), delete() The Manageable interface defines the standard operations for managing system records. Classes that implement this interface can perform create, update, and delete operations.
+- Postable: postAnnouncement() The Postable interface allows restaurant owners to publish announcements and promotional posts that will be displayed to users of the application. 
 
 Resources
 - image folder that contains the restaurant logo image, the menu images, and the location front view.
@@ -49,6 +56,8 @@ Resources
 USER STORIES (Recommended):
 - As a student, I  want to know all the food places around my campus so that I can satisfy my cravings and save the effort of walking under the heat.
 - Across social media platforms, I have noticed that there are always students who would ask the same questions of “where is the best place to eat”, “good cafes”, and more. This project aims to aid old and new students to find and navigate their way through the food establishments around De La Salle Manila.
+-As a restaurant owner, I want to manage my restaurant's information, menus, operating hours, photos, and announcements so that students can always access accurate and up-to-date information about my establishment.
+-As a system administrator, I want to manage restaurant owner accounts and verify registered establishments so that the information displayed in the application remains accurate, secure, and trustworthy.
 
 CORE FEATURES (Recommended):
 - Sample Main Screen
@@ -59,3 +68,5 @@ CORE FEATURES (Recommended):
 ![Test Image](https://github.com/hannahgutierrez/LBYCPOB-FinalProject-AnimoTaftFoodBites/blob/master/projectvisuals/SampleMenu.png)
 - Sample Direction Option Screen
 ![Alt text](https://i.imgur.com/8gccG7b.jpeg)
+-Additional Features 
+<img width="1536" height="1024" alt="AdditionalFeatures" src="https://github.com/user-attachments/assets/a7ac1efe-13f9-4b63-ab19-d7a8e9686dd7" />
