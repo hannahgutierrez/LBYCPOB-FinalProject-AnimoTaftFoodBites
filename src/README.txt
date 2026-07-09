@@ -2,10 +2,8 @@ PROJECT TITLE:
 Animo Taft Food Bites: A Directory to The Food Places Around De La Salle University Manila Campus
 
 TEAM MEMBERS:
-<Name 1> - <GitHub username>
-<Name 2> - <GitHub username>
-<Name 3> - <GitHub username>
-(or: Solo Project - <Name> - <GitHub username>)
+BUNGAY, Alexia Gabrielle - <GitHub username>
+GUTIERREZ, Hannah Grace C. - hannahgutierrez
 
 PROBLEM STATEMENT & GOALS:
 <What problem does this solve? What are the main objectives?>
