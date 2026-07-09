@@ -57,9 +57,8 @@ Resources
 USER STORIES (Recommended):
 - As a student, I  want to know all the food places around my campus so that I can satisfy my cravings and save the effort of walking under the heat.
 - Across social media platforms, I have noticed that there are always students who would ask the same questions of “where is the best place to eat”, “good cafes”, and more. This project aims to aid old and new students to find and navigate their way through the food establishments around De La Salle Manila.
-
--As a restaurant owner, I want to manage my restaurant's information, menus, operating hours, photos, and announcements so that students can always access accurate and up-to-date information about my establishment.
--As a system administrator, I want to manage restaurant owner accounts and verify registered establishments so that the information displayed in the application remains accurate, secure, and trustworthy.
+- As a restaurant owner, I want to manage my restaurant's information, menus, operating hours, photos, and announcements so that students can always access accurate and up-to-date information about my establishment.
+- As a system administrator, I want to manage restaurant owner accounts and verify registered establishments so that the information displayed in the application remains accurate, secure, and trustworthy.
 
 CORE FEATURES (Recommended):
 - Sample Main Screen
