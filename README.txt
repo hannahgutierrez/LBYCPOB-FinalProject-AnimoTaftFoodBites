@@ -23,8 +23,10 @@ CORE OOP CONCEPTS:
 INITIAL CLASS IDEAS:
 Class
 - DirectionMap: directs to the google map link using getGoogleMapLink().
-Abstract class:
+Abstract class
 - FoodPlace: OpeningStatus() to know the opening hours, contactInformation to contact the establishment for inquiries, loadLogo() to show the logo, establishmentName to know the restaurant name, displayMenu() to notify the user what available foods are in the said establishment, and Address to know its specific location.
+Inheritance or subclass
+- Establishment (The Establishment name differs on the restaurant or cafe name): an extension of FoodPlace.
 Interface
 - Navigatable: getGoogleMapLink() provides the live directions through google map integration.
 - RestaurantsCategorable: foodType() to show off the variation (chicken, fish, etc.) of food available.
