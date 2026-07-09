@@ -22,13 +22,13 @@ CORE OOP CONCEPTS:
 
 INITIAL CLASS IDEAS:
 Interface
-Navigatable: getGoogleMapLink() provides the live directions through google map integration.
-RestaurantsCategorable: foodType() to show off the variation (chicken, fish, etc.) of food available.
-CafeCategorable: internetAvailability() to show if the place has available internet connection.
+- Navigatable: getGoogleMapLink() provides the live directions through google map integration.
+- RestaurantsCategorable: foodType() to show off the variation (chicken, fish, etc.) of food available.
+- CafeCategorable: internetAvailability() to show if the place has available internet connection.
 
 Resources
-image folder that contains the restaurant logo image, the menu images, and the location front view.
-direction folder that contains text files that hold the link directed to google maps to provide the directions
+- image folder that contains the restaurant logo image, the menu images, and the location front view.
+- direction folder that contains text files that hold the link directed to google maps to provide the directions
 
 USER STORIES (Recommended):
 - As a student, I  want to know all the food places around my campus so that I can satisfy my cravings and save the effort of walking under the heat.
