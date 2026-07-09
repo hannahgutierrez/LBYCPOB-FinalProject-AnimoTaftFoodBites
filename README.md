@@ -7,6 +7,7 @@ BUNGAY, Alexia Gabrielle - alexiabungay
 
 GUTIERREZ, Hannah Grace C. - hannahgutierrez
 
+Valencia, John Lance B. - John Lance Valencia
 
 PROBLEM STATEMENT & GOALS:
 
