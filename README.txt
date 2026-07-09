@@ -32,7 +32,7 @@ Resources
 
 USER STORIES (Recommended):
 - As a student, I  want to know all the food places around my campus so that I can satisfy my cravings and save the effort of walking under the heat.
-- As a <user type>, I want to <action> so that <goal>.
+- Across social media platforms, I have noticed that there are always students who would ask the same questions of “where is the best place to eat”, “good cafes”, and more. This project aims to aid old and new students to find and navigate their way through the food establishments around De La Salle Manila.
 
 CORE FEATURES (Recommended):
 - Sample Main Screen
