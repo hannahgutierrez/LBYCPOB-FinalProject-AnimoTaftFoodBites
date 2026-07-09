@@ -1,5 +1,5 @@
 PROJECT TITLE:
-<Your project name>
+Animo Taft Food Bites: A Directory to The Food Places Around De La Salle University Manila Campus
 
 TEAM MEMBERS:
 <Name 1> - <GitHub username>
