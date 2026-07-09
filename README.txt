@@ -21,6 +21,8 @@ CORE OOP CONCEPTS:
 - Abstraction: Hiding the process of sorting the category of food places and will simply display the final results.
 
 INITIAL CLASS IDEAS:
+Class
+- DirectionMap: directs to the google map link using getGoogleMapLink().
 Interface
 - Navigatable: getGoogleMapLink() provides the live directions through google map integration.
 - RestaurantsCategorable: foodType() to show off the variation (chicken, fish, etc.) of food available.
