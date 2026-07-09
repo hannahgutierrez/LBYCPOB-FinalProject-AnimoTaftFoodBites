@@ -31,7 +31,7 @@ image folder that contains the restaurant logo image, the menu images, and the l
 direction folder that contains text files that hold the link directed to google maps to provide the directions
 
 USER STORIES (Recommended):
-- As a <user type>, I want to <action> so that <goal>.
+- As a student, I  want to know all the food places around my campus so that I can satisfy my cravings and save the effort of walking under the heat.
 - As a <user type>, I want to <action> so that <goal>.
 
 CORE FEATURES (Recommended):
