@@ -46,5 +46,10 @@ public abstract class FoodPlace {
         return name;
     }
 
+    //category getter
+    public String getCategory() {
+        return category;
+    }
+
 }
 
