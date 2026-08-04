@@ -244,4 +244,13 @@ public class FoodPlaceController {
             }
         }
     }
+
+    private void switchScreen(VBox targetScreen) {
+        mainScreen.setVisible(false);
+        detailsScreen.setVisible(false);
+        menuScreen.setVisible(false);
+        addFormScreen.setVisible(false);
+        loginModal.setVisible(false);
+        targetScreen.setVisible(true);
+    }
 }
