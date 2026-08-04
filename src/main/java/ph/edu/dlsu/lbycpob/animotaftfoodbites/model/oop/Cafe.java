@@ -22,5 +22,10 @@ public class Cafe extends FoodPlace implements CafeCategorable {
     public String getCategoryName() {
         return "CAFE";
     }
+
+    @Override
+    public boolean hasWifi() {
+        return false;
+    }
 }
 
