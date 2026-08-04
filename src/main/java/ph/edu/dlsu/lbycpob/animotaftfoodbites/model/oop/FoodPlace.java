@@ -81,5 +81,9 @@ public abstract class FoodPlace {
         return menuImagePaths;
     }
 
+    //mapUrl getter
+    public String getMapUrl() {
+        return mapUrl;
+    }
 }
 
