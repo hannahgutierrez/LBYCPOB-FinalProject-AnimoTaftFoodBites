@@ -49,4 +49,31 @@ public class FoodPlaceController {
     private int currentMenuIndex = 0;
     private boolean isAdminLoggedIn = false;
 
+    @FXML
+    public void initialize() {
+        if (categoryFilter != null) {
+            categoryFilter.getItems().addAll("ALL", "RESTAURANT", "CAFE", "STALL");
+            categoryFilter.setOnAction(e -> filterCategory());
+        }
+        String mapsUrl = "https://www.google.com/maps/dir/?api=1&origin=De+La+Salle+University+South+Gate,+Taft+Ave,+Malate,+Manila&destination=McDonald's+Taft+Avenue+Manila";
+        List<String> mcdoMenus = new ArrayList<>();
+        for (int i = 1; i <= 19; i++) {
+            mcdoMenus.add("/images/Mcdo/McdoMenu" + i + ".png");
+        }
+        foodPlaces.add(new Restaurant(
+                "1",
+                "McDonald's Taft",
+                "Fast Food",
+                "2399 Taft Avenue, Malate, Manila",
+                "(02) 8888 6236",
+                "Operation Hours: 24-hours",
+                "/images/Mcdo/McdoLogo.jpg",
+                "/images/Mcdo/McdoPlacePhoto.jpg",
+                mcdoMenus,
+                mapsUrl,
+                "Fast Food"
+        ));
+        renderRestaurantGrid(foodPlaces);
+        updateAdminButtonUI();
+    }
 }
