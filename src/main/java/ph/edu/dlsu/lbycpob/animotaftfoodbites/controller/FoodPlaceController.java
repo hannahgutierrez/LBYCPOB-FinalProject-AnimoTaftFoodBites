@@ -284,6 +284,36 @@ public class FoodPlaceController {
         return (file != null) ? file.toURI().toString() : "";
     }
 
+    @FXML
+    public void saveRestaurant() {
+        if (!isAdminLoggedIn) return;
+
+        String cat = inputCategory.getText() != null ? inputCategory.getText().toUpperCase() : "";
+        List<String> menuList = new ArrayList<>();
+        if (uploadedMenuPath != null && !uploadedMenuPath.isBlank()) {
+            menuList.add(uploadedMenuPath);
+        }
+
+        FoodPlace newPlace;
+        if (cat.contains("CAFE")) {
+            newPlace = new Cafe(String.valueOf(System.currentTimeMillis()), inputName.getText(), "CAFE",
+                    inputAddress.getText(), inputContact.getText(), inputHours.getText(),
+                    uploadedLogoPath, uploadedStorePath, menuList, inputMapUrl.getText(), true);
+        } else if (cat.contains("STALL")) {
+            newPlace = new Stall(String.valueOf(System.currentTimeMillis()), inputName.getText(), "STALL",
+                    inputAddress.getText(), inputContact.getText(), inputHours.getText(),
+                    uploadedLogoPath, uploadedStorePath, menuList, inputMapUrl.getText());
+        } else {
+            newPlace = new Restaurant(String.valueOf(System.currentTimeMillis()), inputName.getText(), "RESTAURANT",
+                    inputAddress.getText(), inputContact.getText(), inputHours.getText(),
+                    uploadedLogoPath, uploadedStorePath, menuList, inputMapUrl.getText(), cat);
+        }
+
+        foodPlaces.add(newPlace);
+        renderRestaurantGrid(foodPlaces);
+        showMainScreen();
+    }
+
     private void switchScreen(VBox targetScreen) {
         mainScreen.setVisible(false);
         detailsScreen.setVisible(false);
