@@ -60,5 +60,10 @@ public abstract class FoodPlace {
     public String getContactInfo() {
         return contactInfo;
     }
+
+    //openingHours getter
+    public String getOpeningHours() {
+        return openingHours;
+    }
 }
 
