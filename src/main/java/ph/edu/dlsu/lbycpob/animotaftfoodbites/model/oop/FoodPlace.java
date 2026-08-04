@@ -70,5 +70,10 @@ public abstract class FoodPlace {
     public String getLogoPath() {
         return logoPath;
     }
+
+    //storeImagePath getter
+    public String getStoreImagePath() {
+        return storeImagePath;
+    }
 }
 
