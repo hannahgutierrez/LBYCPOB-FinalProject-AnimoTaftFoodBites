@@ -233,4 +233,15 @@ public class FoodPlaceController {
             menuPageLabel.setText("Page 0/0");
         }
     }
+
+    @FXML
+    public void openGoogleMaps() {
+        if (currentSelectedPlace != null && currentSelectedPlace.getMapUrl() != null && !currentSelectedPlace.getMapUrl().isBlank()) {
+            try {
+                Desktop.getDesktop().browse(new URI(currentSelectedPlace.getMapUrl()));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }
