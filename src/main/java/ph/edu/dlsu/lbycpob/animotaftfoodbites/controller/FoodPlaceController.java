@@ -27,4 +27,9 @@ public class FoodPlaceController {
     @FXML private ComboBox<String> categoryFilter;
     @FXML private FlowPane restaurantGrid;
     @FXML private Button adminAuthButton;
+
+    //Admin Controls
+    @FXML private TextField adminUsernameField;
+    @FXML private PasswordField adminPasswordField;
+    @FXML private Label loginErrorLabel;
 }
