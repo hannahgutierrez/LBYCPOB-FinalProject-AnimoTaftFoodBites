@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="ph.edu.dlsu.lbycpob.animotaftfoodbites.controller.FoodPlaceController"
+           styleClass="root-container" stylesheets="@style.css">
+
+    <!-- 1. MAIN DIRECTORY SCREEN -->
+    <VBox fx:id="mainScreen" alignment="TOP_CENTER" spacing="15" maxWidth="700" maxHeight="500" styleClass="card-panel">
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <ComboBox fx:id="categoryFilter" promptText="Category" prefWidth="150" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="adminAuthButton" text="🔑 Admin Login" onAction="#handleAdminButtonClick" styleClass="pill-button"/>
+        </HBox>
+
+        <ScrollPane fitToWidth="true" style="-fx-background-color: transparent; -fx-background: transparent;">
+            <FlowPane fx:id="restaurantGrid" hgap="20" vgap="20" alignment="CENTER">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+            </FlowPane>
+        </ScrollPane>
+    </VBox>
+
+</StackPane>
