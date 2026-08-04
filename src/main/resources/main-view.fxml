@@ -47,4 +47,19 @@
         </HBox>
     </VBox>
 
+    <!-- 3. MENU SCREEN -->
+    <VBox fx:id="menuScreen" visible="false" alignment="TOP_CENTER" spacing="15" maxWidth="700" maxHeight="500" styleClass="card-panel">
+        <HBox alignment="CENTER_LEFT" prefWidth="2000.0" spacing="10">
+            <Label fx:id="menuTitleLabel" styleClass="card-title" style="-fx-font-size: 18px;"/>
+            <Region HBox.hgrow="ALWAYS" />
+            <Button text="◄ Prev" onAction="#prevMenuImage" styleClass="pill-button"/>
+            <Label fx:id="menuPageLabel" text="Page 1/1" styleClass="details-label"/>
+            <Button text="Next ►" onAction="#nextMenuImage" styleClass="pill-button"/>
+            <Button text="✕ Back" onAction="#showDetailsScreen" styleClass="pill-button"/>
+        </HBox>
+        <ScrollPane fitToWidth="true" fitToHeight="true" VBox.vgrow="ALWAYS">
+            <ImageView fx:id="menuImageView" preserveRatio="true"/>
+        </ScrollPane>
+    </VBox>
+
 </StackPane>
