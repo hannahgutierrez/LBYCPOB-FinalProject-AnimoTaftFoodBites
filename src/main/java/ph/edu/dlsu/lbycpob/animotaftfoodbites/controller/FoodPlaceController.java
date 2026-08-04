@@ -21,28 +21,40 @@ import java.util.List;
 
 public class FoodPlaceController {
     //Screens & Modals
-    @FXML private VBox mainScreen, detailsScreen, menuScreen, addFormScreen, loginModal;
+    @FXML
+    private VBox mainScreen, detailsScreen, menuScreen, addFormScreen, loginModal;
 
     //Main Directory Controls
-    @FXML private ComboBox<String> categoryFilter;
-    @FXML private FlowPane restaurantGrid;
-    @FXML private Button adminAuthButton;
+    @FXML
+    private ComboBox<String> categoryFilter;
+    @FXML
+    private FlowPane restaurantGrid;
+    @FXML
+    private Button adminAuthButton;
 
     //Admin Controls
-    @FXML private TextField adminUsernameField;
-    @FXML private PasswordField adminPasswordField;
-    @FXML private Label loginErrorLabel;
+    @FXML
+    private TextField adminUsernameField;
+    @FXML
+    private PasswordField adminPasswordField;
+    @FXML
+    private Label loginErrorLabel;
 
     //Details Controls
-    @FXML private Label detailNameLabel, detailHoursLabel, detailContactLabel, detailAddressLabel;
-    @FXML private ImageView detailLogoImageView, detailStoreImageView;
+    @FXML
+    private Label detailNameLabel, detailHoursLabel, detailContactLabel, detailAddressLabel;
+    @FXML
+    private ImageView detailLogoImageView, detailStoreImageView;
 
     //Menu Screen Controls
-    @FXML private Label menuTitleLabel, menuPageLabel;
-    @FXML private ImageView menuImageView;
+    @FXML
+    private Label menuTitleLabel, menuPageLabel;
+    @FXML
+    private ImageView menuImageView;
 
     //Form Controls
-    @FXML private TextField inputName, inputCategory, inputAddress, inputHours, inputContact, inputMapUrl;
+    @FXML
+    private TextField inputName, inputCategory, inputAddress, inputHours, inputContact, inputMapUrl;
     private String uploadedLogoPath, uploadedStorePath, uploadedMenuPath;
     private final List<FoodPlace> foodPlaces = new ArrayList<>();
     private FoodPlace currentSelectedPlace;
@@ -108,5 +120,10 @@ public class FoodPlaceController {
             loginErrorLabel.setText("Invalid username or password!");
             loginErrorLabel.setVisible(true);
         }
+    }
+
+    @FXML
+    public void closeLoginModal() {
+        loginModal.setVisible(false);
     }
 }
