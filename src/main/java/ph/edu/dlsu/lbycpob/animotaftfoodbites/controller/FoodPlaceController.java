@@ -91,4 +91,22 @@ public class FoodPlaceController {
             loginModal.setVisible(true);
         }
     }
+
+    @FXML
+    public void loginAdmin() {
+        String username = adminUsernameField.getText();
+        String password = adminPasswordField.getText();
+
+
+        // Admin Credentials
+        if ("admin".equals(username) && "admin123".equals(password)) {
+            isAdminLoggedIn = true;
+            loginModal.setVisible(false);
+            updateAdminButtonUI();
+            showAddRestaurantForm();
+        } else {
+            loginErrorLabel.setText("Invalid username or password!");
+            loginErrorLabel.setVisible(true);
+        }
+    }
 }
