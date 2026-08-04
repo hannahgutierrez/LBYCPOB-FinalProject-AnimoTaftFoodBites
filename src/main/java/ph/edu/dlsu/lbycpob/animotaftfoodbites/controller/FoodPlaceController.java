@@ -189,4 +189,14 @@ public class FoodPlaceController {
 
         switchScreen(detailsScreen);
     }
+
+    @FXML
+    public void showMenuScreen() {
+        if (currentSelectedPlace != null) {
+            menuTitleLabel.setText(currentSelectedPlace.getName() + " Menu");
+            currentMenuIndex = 0;
+            updateMenuDisplay();
+            switchScreen(menuScreen);
+        }
+    }
 }
