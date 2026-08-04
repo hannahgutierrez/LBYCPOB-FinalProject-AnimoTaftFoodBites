@@ -219,4 +219,18 @@ public class FoodPlaceController {
             }
         }
     }
+
+    private void updateMenuDisplay() {
+        List<String> menus = currentSelectedPlace.getMenuImagePaths();
+        if (menus != null && !menus.isEmpty()) {
+            Image menuImg = loadImage(menus.get(currentMenuIndex));
+            if (menuImg != null) {
+                menuImageView.setImage(menuImg);
+            }
+            menuPageLabel.setText("Page " + (currentMenuIndex + 1) + "/" + menus.size());
+        } else {
+            menuImageView.setImage(null);
+            menuPageLabel.setText("Page 0/0");
+        }
+    }
 }
