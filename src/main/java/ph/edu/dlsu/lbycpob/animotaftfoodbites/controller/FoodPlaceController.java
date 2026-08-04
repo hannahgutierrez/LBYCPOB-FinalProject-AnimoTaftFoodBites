@@ -126,4 +126,12 @@ public class FoodPlaceController {
     public void closeLoginModal() {
         loginModal.setVisible(false);
     }
+
+    private void updateAdminButtonUI() {
+        if (isAdminLoggedIn) {
+            adminAuthButton.setText("+ Add Restaurant");
+        } else {
+            adminAuthButton.setText("🔑 Admin Login");
+        }
+    }
 }
