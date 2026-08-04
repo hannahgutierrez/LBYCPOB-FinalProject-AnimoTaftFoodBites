@@ -75,5 +75,11 @@ public abstract class FoodPlace {
     public String getStoreImagePath() {
         return storeImagePath;
     }
+
+    //menuImagePaths getter
+    public List<String> getMenuImagePaths() {
+        return menuImagePaths;
+    }
+
 }
 
