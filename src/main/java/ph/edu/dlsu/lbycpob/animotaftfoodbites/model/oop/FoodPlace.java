@@ -55,5 +55,10 @@ public abstract class FoodPlace {
     public String getAddress() {
         return address;
     }
+
+    //contactInfo getter
+    public String getContactInfo() {
+        return contactInfo;
+    }
 }
 
