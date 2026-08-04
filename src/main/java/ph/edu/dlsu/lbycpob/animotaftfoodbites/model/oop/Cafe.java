@@ -27,5 +27,9 @@ public class Cafe extends FoodPlace implements CafeCategorable {
     public boolean hasWifi() {
         return false;
     }
+
+    @Override
+    public void setWifi(boolean wifi) {
+    }
 }
 
