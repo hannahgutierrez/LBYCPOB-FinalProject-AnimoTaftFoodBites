@@ -147,4 +147,29 @@ public class FoodPlaceController {
                 .toList();
         renderRestaurantGrid(filtered);
     }
+
+    private void renderRestaurantGrid(List<FoodPlace> list) {
+        restaurantGrid.getChildren().clear();
+        for (FoodPlace place : list) {
+            VBox card = new VBox(8);
+            card.getStyleClass().add("food-card");
+
+            ImageView logo = new ImageView();
+            Image img = loadImage(place.getLogoPath());
+            if (img != null) {
+                logo.setImage(img);
+            }
+
+            logo.setFitWidth(100);
+            logo.setFitHeight(100);
+            logo.setPreserveRatio(true);
+
+            Label name = new Label(place.getName());
+            name.getStyleClass().add("card-title");
+
+            card.getChildren().addAll(logo, name);
+            card.setOnMouseClicked(e -> showDetailsScreen(place));
+            restaurantGrid.getChildren().add(card);
+        }
+    }
 }
