@@ -245,6 +245,11 @@ public class FoodPlaceController {
         }
     }
 
+    @FXML
+    public void showMainScreen() {
+        switchScreen(mainScreen); 
+    }
+
     private void switchScreen(VBox targetScreen) {
         mainScreen.setVisible(false);
         detailsScreen.setVisible(false);
