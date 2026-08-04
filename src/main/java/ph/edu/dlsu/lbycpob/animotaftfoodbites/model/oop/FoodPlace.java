@@ -51,5 +51,9 @@ public abstract class FoodPlace {
         return category;
     }
 
+    //address getter
+    public String getAddress() {
+        return address;
+    }
 }
 
