@@ -134,4 +134,17 @@ public class FoodPlaceController {
             adminAuthButton.setText("🔑 Admin Login");
         }
     }
+
+    //Category
+    private void filterCategory() {
+        String selected = categoryFilter.getValue();
+        if (selected == null || selected.equals("ALL")) {
+            renderRestaurantGrid(foodPlaces);
+            return;
+        }
+        List<FoodPlace> filtered = foodPlaces.stream()
+                .filter(p -> p.getCategoryName().equalsIgnoreCase(selected))
+                .toList();
+        renderRestaurantGrid(filtered);
+    }
 }
