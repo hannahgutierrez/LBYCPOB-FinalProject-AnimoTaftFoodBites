@@ -76,4 +76,19 @@ public class FoodPlaceController {
         renderRestaurantGrid(foodPlaces);
         updateAdminButtonUI();
     }
+
+    //Admin log in
+    @FXML
+    public void handleAdminButtonClick() {
+        if (isAdminLoggedIn) {
+            // If already logged in as Admin, show Add Restaurant Form directly
+            showAddRestaurantForm();
+        } else {
+            // Show Auth Modal
+            adminUsernameField.clear();
+            adminPasswordField.clear();
+            loginErrorLabel.setVisible(false);
+            loginModal.setVisible(true);
+        }
+    }
 }
