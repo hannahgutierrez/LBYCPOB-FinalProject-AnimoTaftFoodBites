@@ -199,11 +199,22 @@ public class FoodPlaceController {
             switchScreen(menuScreen);
         }
     }
+
     @FXML
     public void prevMenuImage() {
         if (currentSelectedPlace != null && !currentSelectedPlace.getMenuImagePaths().isEmpty()) {
             if (currentMenuIndex > 0) {
                 currentMenuIndex--;
+                updateMenuDisplay();
+            }
+        }
+    }
+
+    @FXML
+    public void nextMenuImage() {
+        if (currentSelectedPlace != null && !currentSelectedPlace.getMenuImagePaths().isEmpty()) {
+            if (currentMenuIndex < currentSelectedPlace.getMenuImagePaths().size() - 1) {
+                currentMenuIndex++;
                 updateMenuDisplay();
             }
         }
