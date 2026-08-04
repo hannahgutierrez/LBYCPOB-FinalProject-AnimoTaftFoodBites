@@ -85,5 +85,8 @@ public abstract class FoodPlace {
     public String getMapUrl() {
         return mapUrl;
     }
+
+    //Category method
+    public abstract String getCategoryName();
 }
 
