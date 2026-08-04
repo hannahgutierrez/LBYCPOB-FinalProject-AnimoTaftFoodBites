@@ -314,6 +314,19 @@ public class FoodPlaceController {
         showMainScreen();
     }
 
+    private Image loadImage(String path) {
+        if (path == null || path.isBlank()) return null;
+        try {
+            if (path.startsWith("/")) {
+                InputStream is = getClass().getResourceAsStream(path);
+                if (is != null) return new Image(is);
+            }
+            return new Image(path);
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
     private void switchScreen(VBox targetScreen) {
         mainScreen.setVisible(false);
         detailsScreen.setVisible(false);
