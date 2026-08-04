@@ -26,4 +26,25 @@
         </ScrollPane>
     </VBox>
 
+    <!-- 2. RESTAURANT DETAILS SCREEN -->
+    <VBox fx:id="detailsScreen" visible="false" alignment="TOP_CENTER" spacing="15" maxWidth="700" maxHeight="500" styleClass="card-panel">
+        <HBox alignment="CENTER_RIGHT">
+            <Button text="✕ Back" onAction="#showMainScreen" styleClass="pill-button"/>
+        </HBox>
+        <Label fx:id="detailNameLabel" styleClass="card-title" style="-fx-font-size: 20px;"/>
+        <HBox spacing="20" alignment="CENTER">
+            <VBox spacing="10" alignment="CENTER">
+                <ImageView fx:id="detailLogoImageView" fitWidth="120" fitHeight="120" preserveRatio="true"/>
+                <Button text="Menu" onAction="#showMenuScreen" styleClass="pill-button" prefWidth="120"/>
+                <Button text="Directions" onAction="#openGoogleMaps" styleClass="pill-button" prefWidth="120"/>
+            </VBox>
+            <VBox spacing="8" alignment="CENTER_LEFT">
+                <ImageView fx:id="detailStoreImageView" fitWidth="280" fitHeight="160" preserveRatio="true"/>
+                <Label fx:id="detailHoursLabel" styleClass="details-label"/>
+                <Label fx:id="detailContactLabel" styleClass="details-label"/>
+                <Label fx:id="detailAddressLabel" styleClass="details-label" wrapText="true" maxWidth="300"/>
+            </VBox>
+        </HBox>
+    </VBox>
+
 </StackPane>
