@@ -277,6 +277,13 @@ public class FoodPlaceController {
         uploadedMenuPath = selectFile();
     }
 
+    private String selectFile() {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.jpeg"));
+        File file = fileChooser.showOpenDialog(mainScreen.getScene().getWindow());
+        return (file != null) ? file.toURI().toString() : "";
+    }
+
     private void switchScreen(VBox targetScreen) {
         mainScreen.setVisible(false);
         detailsScreen.setVisible(false);
