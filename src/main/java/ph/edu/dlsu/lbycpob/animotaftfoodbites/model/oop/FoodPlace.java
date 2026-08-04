@@ -65,5 +65,10 @@ public abstract class FoodPlace {
     public String getOpeningHours() {
         return openingHours;
     }
+
+    //logoPath getter
+    public String getLogoPath() {
+        return logoPath;
+    }
 }
 
