@@ -35,5 +35,10 @@ public abstract class FoodPlace {
         this(String.valueOf(System.currentTimeMillis()), name, "RESTAURANT", address,
                 contactNumber, operationHours, "", "", new ArrayList<>(), "");
     }
+
+    //Id getter
+    public String getId() {
+        return id;
+    }
 }
 
