@@ -15,5 +15,25 @@ public abstract class FoodPlace {
     private List<String> menuImagePaths;
     private String mapUrl;
 
+    //Constructor
+    public FoodPlace(String id, String name, String category, String address,
+                     String contactInfo, String openingHours, String logoPath,
+                     String storeImagePath, List<String> menuImagePaths, String mapUrl) {
+        this.id = id;
+        this.name = name;
+        this.category = category;
+        this.address = address;
+        this.contactInfo = contactInfo;
+        this.openingHours = openingHours;
+        this.logoPath = logoPath;
+        this.storeImagePath = storeImagePath;
+        this.menuImagePaths = menuImagePaths != null ? menuImagePaths : new ArrayList<>();
+        this.mapUrl = mapUrl;
+    }
+
+    public FoodPlace(String name, String address, String contactNumber, String operationHours) {
+        this(String.valueOf(System.currentTimeMillis()), name, "RESTAURANT", address,
+                contactNumber, operationHours, "", "", new ArrayList<>(), "");
+    }
 }
 
