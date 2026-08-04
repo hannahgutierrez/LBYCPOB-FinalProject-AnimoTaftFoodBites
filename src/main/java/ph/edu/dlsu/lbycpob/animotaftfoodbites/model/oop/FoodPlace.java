@@ -40,5 +40,11 @@ public abstract class FoodPlace {
     public String getId() {
         return id;
     }
+
+    //name getter
+    public String getName() {
+        return name;
+    }
+
 }
 
