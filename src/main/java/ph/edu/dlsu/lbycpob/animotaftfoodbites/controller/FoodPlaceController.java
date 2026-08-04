@@ -23,4 +23,8 @@ public class FoodPlaceController {
     //Screens & Modals
     @FXML private VBox mainScreen, detailsScreen, menuScreen, addFormScreen, loginModal;
 
+    //Main Directory Controls
+    @FXML private ComboBox<String> categoryFilter;
+    @FXML private FlowPane restaurantGrid;
+    @FXML private Button adminAuthButton;
 }
