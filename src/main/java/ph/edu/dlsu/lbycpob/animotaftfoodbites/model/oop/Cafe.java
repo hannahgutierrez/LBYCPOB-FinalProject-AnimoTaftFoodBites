@@ -17,5 +17,10 @@ public class Cafe extends FoodPlace implements CafeCategorable {
         super(name, address, contactNumber, operationHours);
         this.hasWifi = hasWifi;
     }
+
+    @Override
+    public String getCategoryName() {
+        return "CAFE";
+    }
 }
 
