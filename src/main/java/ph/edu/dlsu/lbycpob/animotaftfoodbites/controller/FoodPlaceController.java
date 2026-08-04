@@ -269,6 +269,10 @@ public class FoodPlaceController {
         uploadedLogoPath = selectFile();
     }
 
+    @FXML public void uploadStoreImage() {
+        uploadedStorePath = selectFile();
+    }
+
     private void switchScreen(VBox targetScreen) {
         mainScreen.setVisible(false);
         detailsScreen.setVisible(false);
