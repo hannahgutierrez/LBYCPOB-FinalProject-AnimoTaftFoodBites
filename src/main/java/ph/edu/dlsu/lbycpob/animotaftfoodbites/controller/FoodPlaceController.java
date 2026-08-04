@@ -36,4 +36,8 @@ public class FoodPlaceController {
     //Details Controls
     @FXML private Label detailNameLabel, detailHoursLabel, detailContactLabel, detailAddressLabel;
     @FXML private ImageView detailLogoImageView, detailStoreImageView;
+
+    //Menu Screen Controls
+    @FXML private Label menuTitleLabel, menuPageLabel;
+    @FXML private ImageView menuImageView;
 }
