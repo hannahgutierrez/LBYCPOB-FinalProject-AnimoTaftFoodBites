@@ -23,5 +23,10 @@ public class Restaurant extends FoodPlace implements RestaurantsCategorable {
     public String getCategoryName() {
         return "RESTAURANT";
     }
+
+    @Override
+    public String getCuisineType() {
+        return cuisineType;
+    }
 }
 
