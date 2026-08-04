@@ -62,4 +62,28 @@
         </ScrollPane>
     </VBox>
 
+    <!-- 4. ADD RESTAURANT FORM (ADMIN ONLY) -->
+    <VBox fx:id="addFormScreen" visible="false" alignment="TOP_CENTER" spacing="10" maxWidth="600" maxHeight="520" styleClass="card-panel">
+        <Label text="Add New Restaurant (Admin)" styleClass="card-title" style="-fx-font-size: 18px;"/>
+        <GridPane hgap="10" vgap="10" alignment="CENTER">
+            <TextField fx:id="inputName" promptText="Complete Restaurant Name" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="inputCategory" promptText="Category (e.g. Fast Food, Cafe)" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <TextField fx:id="inputAddress" promptText="Complete Address" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <TextField fx:id="inputHours" promptText="Opening Hours (e.g. 24 Hours)" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <TextField fx:id="inputContact" promptText="Contact Number" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <TextField fx:id="inputMapUrl" promptText="Google Maps Share Link" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+            <Button text="Select Logo Image" onAction="#uploadLogo" GridPane.columnIndex="0" GridPane.rowIndex="3" prefWidth="200"/>
+            <Button text="Select Store Image" onAction="#uploadStoreImage" GridPane.columnIndex="1" GridPane.rowIndex="3" prefWidth="200"/>
+            <Button text="Select Menu Image" onAction="#uploadMenuImage" GridPane.columnIndex="0" GridPane.rowIndex="4" prefWidth="200"/>
+        </GridPane>
+        <HBox spacing="15" alignment="CENTER">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Button text="Save Restaurant" onAction="#saveRestaurant" styleClass="pill-button"/>
+            <Button text="Cancel" onAction="#showMainScreen" styleClass="pill-button"/>
+        </HBox>
+    </VBox>
+
 </StackPane>
