@@ -32,4 +32,8 @@ public class FoodPlaceController {
     @FXML private TextField adminUsernameField;
     @FXML private PasswordField adminPasswordField;
     @FXML private Label loginErrorLabel;
+
+    //Details Controls
+    @FXML private Label detailNameLabel, detailHoursLabel, detailContactLabel, detailAddressLabel;
+    @FXML private ImageView detailLogoImageView, detailStoreImageView;
 }
