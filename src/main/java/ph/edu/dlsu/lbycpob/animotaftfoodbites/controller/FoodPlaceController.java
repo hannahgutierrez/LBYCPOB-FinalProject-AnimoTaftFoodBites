@@ -40,4 +40,13 @@ public class FoodPlaceController {
     //Menu Screen Controls
     @FXML private Label menuTitleLabel, menuPageLabel;
     @FXML private ImageView menuImageView;
+
+    //Form Controls
+    @FXML private TextField inputName, inputCategory, inputAddress, inputHours, inputContact, inputMapUrl;
+    private String uploadedLogoPath, uploadedStorePath, uploadedMenuPath;
+    private final List<FoodPlace> foodPlaces = new ArrayList<>();
+    private FoodPlace currentSelectedPlace;
+    private int currentMenuIndex = 0;
+    private boolean isAdminLoggedIn = false;
+
 }
