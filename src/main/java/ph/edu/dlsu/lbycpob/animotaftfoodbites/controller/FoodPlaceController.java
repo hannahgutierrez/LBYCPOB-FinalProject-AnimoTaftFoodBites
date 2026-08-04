@@ -255,6 +255,15 @@ public class FoodPlaceController {
         switchScreen(detailsScreen);
     }
 
+    @FXML
+    public void showAddRestaurantForm() {
+        if (!isAdminLoggedIn) {
+            handleAdminButtonClick();
+            return;
+        }
+        switchScreen(addFormScreen);
+    }
+
     private void switchScreen(VBox targetScreen) {
         mainScreen.setVisible(false);
         detailsScreen.setVisible(false);
