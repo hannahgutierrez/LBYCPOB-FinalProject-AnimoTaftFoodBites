@@ -41,6 +41,10 @@ public class FoodPlaceEntity {
     public void setGoogleMapLink(String googleMapLink) { this.googleMapLink = googleMapLink; }
     public String getFoodType() { return foodType; }
     public void setFoodType(String foodType) { this.foodType = foodType; }
+    public Boolean getWifiAvailable() { return wifiAvailable; }
+    public void setWifiAvailable(Boolean wifiAvailable) { this.wifiAvailable = wifiAvailable; }
+    public List<MenuItemEntity> getMenuItems() { return menuItems; }
+    public void setMenuItems(List<MenuItemEntity> menuItems) { this.menuItems = menuItems; }
 
 
 }
