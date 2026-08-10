@@ -29,5 +29,9 @@ public class FoodPlaceEntity {
     public void setAddress(String address) { this.address = address; }
     public String getContactNumber() { return contactNumber; }
     public void setContactNumber(String contactNumber) { this.contactNumber = contactNumber; }
+    public String getOperationHours() { return operationHours; }
+    public void setOperationHours(String operationHours) { this.operationHours = operationHours; }
+    public String getCategory() { return category; }
+    public void setCategory(String category) { this.category = category; }
 
 }
