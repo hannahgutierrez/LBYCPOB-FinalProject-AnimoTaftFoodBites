@@ -37,5 +37,10 @@ public class FoodPlaceEntity {
     public void setLogoUrl(String logoUrl) { this.logoUrl = logoUrl; }
     public String getFrontViewUrl() { return frontViewUrl; }
     public void setFrontViewUrl(String frontViewUrl) { this.frontViewUrl = frontViewUrl; }
+    public String getGoogleMapLink() { return googleMapLink; }
+    public void setGoogleMapLink(String googleMapLink) { this.googleMapLink = googleMapLink; }
+    public String getFoodType() { return foodType; }
+    public void setFoodType(String foodType) { this.foodType = foodType; }
+
 
 }
