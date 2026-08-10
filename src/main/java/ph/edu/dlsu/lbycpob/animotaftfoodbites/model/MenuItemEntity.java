@@ -23,6 +23,10 @@ public class MenuItemEntity {
     public void setDescription(String description) { this.description = description; }
     public BigDecimal getPrice() { return price; }
     public void setPrice(BigDecimal price) { this.price = price; }
+    public String getImageUrl() { return imageUrl; }
+    public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
+    public FoodPlaceEntity getFoodPlace() { return foodPlace; }
+    public void setFoodPlace(FoodPlaceEntity foodPlace) { this.foodPlace = foodPlace; }
 
 }
 
