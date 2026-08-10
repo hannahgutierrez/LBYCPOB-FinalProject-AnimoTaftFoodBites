@@ -6,5 +6,12 @@ import java.util.UUID;
 
 
 public class MenuItemEntity {
+    private UUID id = UUID.randomUUID();
+    private String name;
+    private String description;
+    private BigDecimal price;
+    private String imageUrl;
+    private FoodPlaceEntity foodPlace;
+
 }
 
