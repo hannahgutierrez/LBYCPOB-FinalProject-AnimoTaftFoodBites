@@ -133,7 +133,7 @@ public class FoodPlaceController {
 
         foodPlaces.add(new Restaurant(
                 "4",
-                "Domino's Pizza - Taft Avenue",
+                "Domino's Pizza",
                 "Pizza",
                 "G/F, E.A. Fernandez Bldg, 2510 Taft Ave, Malate, Manila, 1004 Metro Manila",
                 "997-3030",
@@ -143,6 +143,23 @@ public class FoodPlaceController {
                 dominosMenus,
                 "https://maps.app.goo.gl/AoJh955hxrtgbfxu9",
                 "Pizza"
+        ));
+
+        List<String> zusMenus = new ArrayList<>();
+        zusMenus.add("/images/zus/ZUSMenu.jpg");
+
+        foodPlaces.add(new Cafe(
+                "4",
+                "ZUS Coffee",
+                "CAFE",
+                "Unit No. 01-B Ground Floor, Taft, Taft Ave, Malate, 2507 Metro Manila",
+                "N/A",
+                "Operation Hours: 6 AM–10 PM",
+                "/images/zus/ZUSLogo.png",
+                "/images/zus/ZUSPlacePhoto.jpg",
+                zusMenus,
+                "https://maps.app.goo.gl/cVojKAWJbxAmR5uy7",
+                true // wifiAvailable
         ));
         renderRestaurantGrid(foodPlaces);
         updateAdminButtonUI();
