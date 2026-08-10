@@ -70,7 +70,7 @@ public class FoodPlaceController {
         String mapsUrl = "https://maps.app.goo.gl/mqQ9qBPdVtFTUbFL6";
         List<String> mcdoMenus = new ArrayList<>();
         for (int i = 1; i <= 19; i++) {
-            mcdoMenus.add("/images/Mcdo/McdoMenu" + i + ".png");
+            mcdoMenus.add("/images/mcdo/McdoMenu" + i + ".png");
         }
         foodPlaces.add(new Restaurant(
                 "1",
@@ -79,8 +79,8 @@ public class FoodPlaceController {
                 "2399 Taft Avenue, Malate, Manila",
                 "(02) 8888 6236",
                 "Operation Hours: 24-hours",
-                "/images/Mcdo/McdoLogo.jpg",
-                "/images/Mcdo/McdoPlacePhoto.jpg",
+                "/images/mcdo/McdoLogo.jpg",
+                "/images/mcdo/McdoPlacePhoto.jpg",
                 mcdoMenus,
                 mapsUrl,
                 "Fast Food"
