@@ -19,4 +19,6 @@ public class FoodPlaceEntity {
     private Boolean wifiAvailable = false;
     private List<MenuItemEntity> menuItems = new ArrayList<>();
 
+    public FoodPlaceEntity() {}
+
 }
