@@ -67,7 +67,7 @@ public class FoodPlaceController {
             categoryFilter.getItems().addAll("ALL", "RESTAURANT", "CAFE", "STALL");
             categoryFilter.setOnAction(e -> filterCategory());
         }
-        String mapsUrl = "https://www.google.com/maps/dir/?api=1&origin=De+La+Salle+University+South+Gate,+Taft+Ave,+Malate,+Manila&destination=McDonald's+Taft+Avenue+Manila";
+        String mapsUrl = "https://maps.app.goo.gl/mqQ9qBPdVtFTUbFL6";
         List<String> mcdoMenus = new ArrayList<>();
         for (int i = 1; i <= 19; i++) {
             mcdoMenus.add("/images/Mcdo/McdoMenu" + i + ".png");
