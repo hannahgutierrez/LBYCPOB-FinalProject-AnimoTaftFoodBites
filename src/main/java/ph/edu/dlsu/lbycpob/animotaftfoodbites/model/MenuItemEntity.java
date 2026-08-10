@@ -13,5 +13,7 @@ public class MenuItemEntity {
     private String imageUrl;
     private FoodPlaceEntity foodPlace;
 
+    public MenuItemEntity() {}
+
 }
 
