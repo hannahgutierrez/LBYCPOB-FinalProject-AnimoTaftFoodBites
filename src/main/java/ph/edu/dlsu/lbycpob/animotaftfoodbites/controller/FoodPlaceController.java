@@ -124,6 +124,26 @@ public class FoodPlaceController {
                 "https://maps.app.goo.gl/7uWYHqMw8MhrpAm1A",
                 "Fast Food"
         ));
+
+        List<String> dominosMenus = new ArrayList<>();
+        // Adjust loop count based on your actual menu image count
+        for (int i = 1; i <= 10; i++) {
+            dominosMenus.add("/images/Dominos/DominosMenu" + i + ".png");
+        }
+
+        foodPlaces.add(new Restaurant(
+                "4",
+                "Domino's Pizza - Taft Avenue",
+                "Pizza",
+                "G/F, E.A. Fernandez Bldg, 2510 Taft Ave, Malate, Manila, 1004 Metro Manila",
+                "997-3030",
+                "Operation Hours: 10:00 AM - 12:00 AM",
+                "/images/Dominos/DominosLogo.jpg",
+                "/images/Dominos/DominosPlacePhoto.png",
+                dominosMenus,
+                "https://maps.app.goo.gl/AoJh955hxrtgbfxu9",
+                "Pizza"
+        ));
         renderRestaurantGrid(foodPlaces);
         updateAdminButtonUI();
     }
