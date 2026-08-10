@@ -33,5 +33,9 @@ public class FoodPlaceEntity {
     public void setOperationHours(String operationHours) { this.operationHours = operationHours; }
     public String getCategory() { return category; }
     public void setCategory(String category) { this.category = category; }
+    public String getLogoUrl() { return logoUrl; }
+    public void setLogoUrl(String logoUrl) { this.logoUrl = logoUrl; }
+    public String getFrontViewUrl() { return frontViewUrl; }
+    public void setFrontViewUrl(String frontViewUrl) { this.frontViewUrl = frontViewUrl; }
 
 }
