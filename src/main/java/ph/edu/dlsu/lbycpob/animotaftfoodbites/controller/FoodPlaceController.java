@@ -89,7 +89,7 @@ public class FoodPlaceController {
         // Chowking
         List<String> chowkingMenus = new ArrayList<>();
         for (int i = 1; i <= 33; i++) {
-            chowkingMenus.add("/images/Chowking/ChowkingMenu" + i + ".png");
+            chowkingMenus.add("/images/chowking/ChowkingMenu" + i + ".png");
         }
 
         foodPlaces.add(new Restaurant(
@@ -99,8 +99,8 @@ public class FoodPlaceController {
                 "Level 1, D'Student's Place, Commercial Center, 2488 Taft Ave, Malate, Manila, 1004 Metro Manila",
                 "0939 722 0052",
                 "Operation Hours: Open 24 hours",
-                "/images/Chowking/ChowkingLogo.jpg",
-                "/images/Chowking/ChowkingPlacePhoto.png",
+                "/images/chowking/ChowkingLogo.jpg",
+                "/images/chowking/ChowkingPlacePhoto.png",
                 chowkingMenus,
                 "https://maps.app.goo.gl/Qhm4JWukNyJCkAV37",
                 "Fast Food"
