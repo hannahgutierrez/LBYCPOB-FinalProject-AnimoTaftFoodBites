@@ -36,16 +36,36 @@ public class Dtos {
             BigDecimal price,
             String imageUrl
     ) {
+        public static MenuItemDto of(MenuItemEntity entity) {
+            return new MenuItemDto(
+                    entity.getId(),
+                    entity.getName(),
+                    entity.getDescription(),
+                    entity.getPrice(),
+                    entity.getImageUrl()
+            );
+        }
     }
 
-    public static MenuItemDto of(MenuItemEntity entity) {
-        return new MenuItemDto(
-                entity.getId(),
-                entity.getName(),
-                entity.getDescription(),
-                entity.getPrice(),
-                entity.getImageUrl()
-        );
+    public record FoodPlaceCard(
+            UUID id,
+            String name,
+            String category,
+            String foodType,
+            String logoUrl,
+            String operationHours
+    ) {
+        public static FoodPlaceCard of(FoodPlaceEntity entity) {
+            return new FoodPlaceCard(
+                    entity.getId(),
+                    entity.getName(),
+                    entity.getCategory(),
+                    entity.getFoodType(),
+                    entity.getLogoUrl(),
+                    entity.getOperationHours()
+            );
+        }
     }
+
 
 }
