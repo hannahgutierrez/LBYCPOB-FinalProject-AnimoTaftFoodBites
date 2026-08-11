@@ -8,5 +8,11 @@ public class MenuItemRepository {
 
     public MenuItemEntity save(MenuItemEntity item) {
         database.put(item.getId(), item);
+
+        if (item.getFoodPlace() != null) {
+            item.getFoodPlace().getMenuItems().add(item);
+        }
+
         return item;
+    }
 }
