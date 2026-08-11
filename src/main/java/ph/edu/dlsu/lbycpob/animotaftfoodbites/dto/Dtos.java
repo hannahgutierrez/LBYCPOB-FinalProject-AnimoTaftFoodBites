@@ -29,4 +29,13 @@ public class Dtos {
             String imageUrl
     ) {}
 
+    public record MenuItemDto(
+            UUID id,
+            String name,
+            String description,
+            BigDecimal price,
+            String imageUrl
+    ) {
+    }
+
 }
