@@ -27,4 +27,8 @@ public class FoodPlaceRepository {
                 ))
                 .collect(Collectors.toList());
     }
+
+    public Optional<FoodPlaceEntity> findById(UUID id) {
+        return Optional.ofNullable(database.get(id));
+    }
 }
