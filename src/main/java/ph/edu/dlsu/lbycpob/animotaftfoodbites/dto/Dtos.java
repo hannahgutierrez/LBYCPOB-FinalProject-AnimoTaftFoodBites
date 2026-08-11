@@ -38,4 +38,14 @@ public class Dtos {
     ) {
     }
 
+    public static MenuItemDto of(MenuItemEntity entity) {
+        return new MenuItemDto(
+                entity.getId(),
+                entity.getName(),
+                entity.getDescription(),
+                entity.getPrice(),
+                entity.getImageUrl()
+        );
+    }
+
 }
