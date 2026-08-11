@@ -31,4 +31,11 @@ public class FoodPlaceRepository {
     public Optional<FoodPlaceEntity> findById(UUID id) {
         return Optional.ofNullable(database.get(id));
     }
+
+    public Optional<FoodPlaceEntity> findByNameIgnoreCase(String name) {
+        return database.values().stream()
+                .filter(p -> p.getName() != null &&
+                        p.getName().equalsIgnoreCase(name))
+                .findFirst();
+    }
 }
