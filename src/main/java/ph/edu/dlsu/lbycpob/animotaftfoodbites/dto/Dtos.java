@@ -22,6 +22,11 @@ public class Dtos {
             Boolean wifiAvailable
     ) {}
 
-
+    public record CreateMenuItemRequest(
+            String name,
+            String description,
+            BigDecimal price,
+            String imageUrl
+    ) {}
 
 }
