@@ -11,5 +11,9 @@ public class GlobalExceptionHandler {
                 ex.getMessage(),
                 ButtonType.OK
         );
+        alert.setTitle("Error");
+        alert.setHeaderText("An error occurred");
+        alert.showAndWait();
     }
+
 }
