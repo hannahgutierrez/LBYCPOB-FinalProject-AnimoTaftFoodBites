@@ -38,4 +38,9 @@ public class FoodPlaceRepository {
                         p.getName().equalsIgnoreCase(name))
                 .findFirst();
     }
+
+    public FoodPlaceEntity save(FoodPlaceEntity entity) {
+        database.put(entity.getId(), entity);
+        return entity;
+    }
 }
