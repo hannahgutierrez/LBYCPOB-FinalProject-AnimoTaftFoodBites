@@ -4,4 +4,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 
 public class GlobalExceptionHandler {
+
+    public static void handleException(Exception ex) {
+    }
 }
