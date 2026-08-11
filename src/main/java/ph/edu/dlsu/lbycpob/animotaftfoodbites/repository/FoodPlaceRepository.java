@@ -16,4 +16,15 @@ public class FoodPlaceRepository {
                 ))
                 .collect(Collectors.toList());
     }
+
+    public List<FoodPlaceEntity> findByCategoryIgnoreCaseOrderByNameAsc(String category) {
+        return database.values().stream()
+                .filter(p -> p.getCategory() != null &&
+                        p.getCategory().equalsIgnoreCase(category))
+                .sorted(Comparator.comparing(
+                        FoodPlaceEntity::getName,
+                        String.CASE_INSENSITIVE_ORDER
+                ))
+                .collect(Collectors.toList());
+    }
 }
