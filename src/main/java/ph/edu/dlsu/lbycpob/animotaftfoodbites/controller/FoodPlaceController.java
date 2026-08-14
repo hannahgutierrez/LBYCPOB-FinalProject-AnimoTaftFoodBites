@@ -164,7 +164,15 @@ public class FoodPlaceController {
         }
     }
 
-    //Category
+    //  Remove / delete food place
+    @FXML
+    public void deleteCurrentPlace() {
+        if (currentSelectedPlace != null && isLoggedIn) {
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure this place has closed and should be removed?", ButtonType.YES, ButtonType.NO);
+
+
+
+            //Category
     private void filterCategory() {
         String selected = categoryFilter.getValue();
         if (selected == null || selected.equals("ALL")) {
