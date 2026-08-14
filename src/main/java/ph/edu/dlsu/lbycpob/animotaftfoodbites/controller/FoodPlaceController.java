@@ -159,12 +159,7 @@ public class FoodPlaceController {
 
 
 
-        // Admin Credentials
-        if ("admin".equals(username) && "admin123".equals(password)) {
-            isAdminLoggedIn = true;
-            loginModal.setVisible(false);
-            updateAdminButtonUI();
-            showAddRestaurantForm();
+
         } else {
             loginErrorLabel.setText("Invalid username or password!");
             loginErrorLabel.setVisible(true);
