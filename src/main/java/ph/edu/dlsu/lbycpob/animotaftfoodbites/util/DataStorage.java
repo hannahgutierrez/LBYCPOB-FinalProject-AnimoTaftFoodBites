@@ -17,4 +17,12 @@ public class DataStorage {
         File file = new File(FOOD_PLACES_FILE);
         if (!file.exists()) return new ArrayList<>();
 
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))) {
+            return (List<FoodPlace>) ois.readObject();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ArrayList<>();
+        }
     }
+
+}
