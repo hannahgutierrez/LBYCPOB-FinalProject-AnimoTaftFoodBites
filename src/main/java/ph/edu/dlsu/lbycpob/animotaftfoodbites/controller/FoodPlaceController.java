@@ -139,6 +139,26 @@ public class    FoodPlaceController {
                 "Fast Food"
         ));
 
+        // KFC
+        List<String> kfcMenus = new ArrayList<>();
+        for (int i = 1; i <= 20; i++) {
+            kfcMenus.add("/images/kfc/KFCMenu" + i + ".png");
+        }
+        foodPlaces.add(new Restaurant(
+                "3",
+                "KFC",
+                "Fast Food",
+                "2507 Taft Ave, Malate, Manila, 1004 Metro Manila",
+                "(02) 8256 8377",
+                "Operation Hours: Open - Closes 9 PM",
+                "/images/kfc/KFCLogo.jpg",
+                "/images/kfc/KFCPlacePhoto.jpg",
+                kfcMenus,
+                "https://maps.app.goo.gl/7uWYHqMw8MhrpAm1A",
+                "Fast Food"
+        ));
+
+
 
 
 
