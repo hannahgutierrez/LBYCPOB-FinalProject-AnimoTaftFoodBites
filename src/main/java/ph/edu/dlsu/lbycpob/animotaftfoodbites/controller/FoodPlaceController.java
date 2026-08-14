@@ -154,16 +154,7 @@ public class FoodPlaceController {
         renderRestaurantGrid(foodPlaces);
         updateAdminButtonUI();
     }
-
-
-        } else {
-            // Show Auth Modal
-            adminUsernameField.clear();
-            adminPasswordField.clear();
-            loginErrorLabel.setVisible(false);
-            loginModal.setVisible(true);
-        }
-    }
+    
 
     @FXML
     public void loginAdmin() {
