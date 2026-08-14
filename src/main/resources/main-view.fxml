@@ -102,3 +102,11 @@
         <!-- Link to Switch to Registration -->
         <Hyperlink text="Don't have an account? Create one here" onAction="#openRegisterModal"/>
     </VBox>
+
+    <!-- REGISTER MODAL -->
+    <VBox fx:id="registerModal" visible="false" spacing="10" alignment="CENTER" styleClass="modal-box">
+        <Label text="Create New Account" styleClass="modal-title"/>
+        <TextField fx:id="regUsernameField" promptText="Enter Username"/>
+        <PasswordField fx:id="regPasswordField" promptText="Enter Password"/>
+        <PasswordField fx:id="regConfirmPasswordField" promptText="Confirm Password"/>
+        <Label fx:id="regErrorLabel" textFill="red" visible="false"/>
