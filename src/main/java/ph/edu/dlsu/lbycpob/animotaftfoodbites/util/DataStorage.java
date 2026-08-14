@@ -50,4 +50,12 @@ public class DataStorage {
         }
     }
 
+    public static void saveUsers(List<User> users) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(USERS_FILE))) {
+            oos.writeObject(users);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 }
