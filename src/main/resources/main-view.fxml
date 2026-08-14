@@ -87,14 +87,8 @@
     </VBox>
 
     <!-- 5. ADMIN LOGIN MODAL OVERLAY -->
-    <VBox fx:id="loginModal" visible="false" alignment="CENTER" maxWidth="350" maxHeight="250" styleClass="card-panel" spacing="12">
-        <Label text="Admin Authentication" styleClass="card-title" style="-fx-font-size: 16px;"/>
-        <TextField fx:id="adminUsernameField" promptText="Username" maxWidth="250"/>
-        <PasswordField fx:id="adminPasswordField" promptText="Password" maxWidth="250"/>
-        <Label fx:id="loginErrorLabel" style="-fx-text-fill: #ff6b6b; -fx-font-size: 12px;" visible="false"/>
-        <HBox spacing="10" alignment="CENTER">
-            <Button text="Login" onAction="#loginAdmin" styleClass="pill-button"/>
-            <Button text="Cancel" onAction="#closeLoginModal" styleClass="pill-button"/>
-        </HBox>
-    </VBox>
-</StackPane>
+    <VBox fx:id="loginModal" visible="false" spacing="10" alignment="CENTER" styleClass="modal-box">
+        <Label text="User Login" styleClass="modal-title"/>
+        <TextField fx:id="adminUsernameField" promptText="Username"/>
+        <PasswordField fx:id="adminPasswordField" promptText="Password"/>
+        <Label fx:id="loginErrorLabel" textFill="red" visible="false"/>
