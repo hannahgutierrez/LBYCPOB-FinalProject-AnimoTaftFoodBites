@@ -98,13 +98,34 @@ public class    FoodPlaceController {
         renderRestaurantGrid(foodPlaces);n
         updateAdminButtonUI();
     }
-    
+
+    private void seedDefaultData() {
+        // McDonald's
+        String mapsUrl = "https://maps.app.goo.gl/mqQ9qBPdVtFTUbFL6";
+        List<String> mcdoMenus = new ArrayList<>();
+        for (int i = 1; i <= 19; i++) {
+            mcdoMenus.add("/images/mcdo/McdoMenu" + i + ".png");
+        }
+        foodPlaces.add(new Restaurant(
+                "1",
+                "McDonald's Taft",
+                "Fast Food",
+                "2399 Taft Avenue, Malate, Manila",
+                "(02) 8888 6236",
+                "Operation Hours: 24-hours",
+                "/images/mcdo/McdoLogo.jpg",
+                "/images/mcdo/McdoPlacePhoto.jpg",
+                mcdoMenus,
+                mapsUrl,
+                "Fast Food"
+        ));
 
 
 
 
 
-    private void updateAdminButtonUI() {
+
+        private void updateAdminButtonUI() {
         if (isAdminLoggedIn) {
             adminAuthButton.setText("+ Add Restaurant");
         } else {
