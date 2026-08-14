@@ -82,8 +82,24 @@ public class    FoodPlaceController {
             categoryFilter.setOnAction(e -> filterCategory());
         }
 
-        List<String> zusMenus = new ArrayList<>();
-        zusMenus.add("/images/zus/ZUSMenu.jpg");
+
+        // Load persisted data
+        users = DataStorage.loadUsers();
+        foodPlaces = DataStorage.loadFoodPlaces();
+
+
+        // Seed default items if empty on initial launch
+        if (foodPlaces.isEmpty()) {
+            seedDefaultData();
+            DataStorage.saveFoodPlaces(foodPlaces);
+        }
+
+
+        renderRestaurantGrid(foodPlaces);n
+        updateAdminButtonUI();
+    }
+
+
 
 
 
