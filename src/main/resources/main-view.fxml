@@ -93,6 +93,7 @@
         <PasswordField fx:id="adminPasswordField" promptText="Password"/>
         <Label fx:id="loginErrorLabel" textFill="red" visible="false"/>
 
+
         <HBox spacing="10" alignment="CENTER">
             <Button text="Login" onAction="#loginAdmin"/>
             <Button text="Cancel" onAction="#closeLoginModal"/>
@@ -103,6 +104,7 @@
         <Hyperlink text="Don't have an account? Create one here" onAction="#openRegisterModal"/>
     </VBox>
 
+
     <!-- REGISTER MODAL -->
     <VBox fx:id="registerModal" visible="false" spacing="10" alignment="CENTER" styleClass="modal-box">
         <Label text="Create New Account" styleClass="modal-title"/>
@@ -110,3 +112,16 @@
         <PasswordField fx:id="regPasswordField" promptText="Enter Password"/>
         <PasswordField fx:id="regConfirmPasswordField" promptText="Confirm Password"/>
         <Label fx:id="regErrorLabel" textFill="red" visible="false"/>
+
+
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="Register Account" onAction="#registerUser"/>
+            <Button text="Cancel" onAction="#closeRegisterModal"/>
+        </HBox>
+
+
+        <Hyperlink text="Already have an account? Log in" onAction="#handleAdminButtonClick"/>
+    </VBox>
+
+
+</StackPane>
