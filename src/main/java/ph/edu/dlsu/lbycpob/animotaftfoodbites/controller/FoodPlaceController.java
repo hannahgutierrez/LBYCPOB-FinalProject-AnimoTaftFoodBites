@@ -20,9 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FoodPlaceController {
-    //Screens & Modals
-    @FXML
-    private VBox mainScreen, detailsScreen, menuScreen, addFormScreen, loginModal;
+
 
     //Main Directory Controls
     @FXML
