@@ -155,12 +155,7 @@ public class FoodPlaceController {
         updateAdminButtonUI();
     }
 
-    //Admin log in
-    @FXML
-    public void handleAdminButtonClick() {
-        if (isAdminLoggedIn) {
-            // If already logged in as Admin, show Add Restaurant Form directly
-            showAddRestaurantForm();
+
         } else {
             // Show Auth Modal
             adminUsernameField.clear();
