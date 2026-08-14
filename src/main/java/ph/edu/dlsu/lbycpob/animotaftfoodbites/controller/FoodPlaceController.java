@@ -156,12 +156,6 @@ public class FoodPlaceController {
     }
 
 
-    
-    @FXML
-    public void closeLoginModal() {
-        loginModal.setVisible(false);
-    }
-
     private void updateAdminButtonUI() {
         if (isAdminLoggedIn) {
             adminAuthButton.setText("+ Add Restaurant");
