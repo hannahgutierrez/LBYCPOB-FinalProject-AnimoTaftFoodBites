@@ -51,10 +51,6 @@ public class FoodPlaceController {
     private ImageView menuImageView;
 
 
-    private FoodPlace currentSelectedPlace;
-    private int currentMenuIndex = 0;
-    private boolean isAdminLoggedIn = false;
-
     @FXML
     public void initialize() {
         if (categoryFilter != null) {
