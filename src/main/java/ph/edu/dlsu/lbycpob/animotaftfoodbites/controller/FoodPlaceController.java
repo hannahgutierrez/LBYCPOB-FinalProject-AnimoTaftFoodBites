@@ -390,6 +390,7 @@ public class    FoodPlaceController {
         }
 
         foodPlaces.add(newPlace);
+        DataStorage.saveFoodPlaces(foodPlaces); // Save state on addition
         renderRestaurantGrid(foodPlaces);
         showMainScreen();
     }
