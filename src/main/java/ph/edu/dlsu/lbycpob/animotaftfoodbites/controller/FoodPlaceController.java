@@ -169,6 +169,16 @@ public class FoodPlaceController {
     public void deleteCurrentPlace() {
         if (currentSelectedPlace != null && isLoggedIn) {
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure this place has closed and should be removed?", ButtonType.YES, ButtonType.NO);
+            alert.showAndWait().ifPresent(response -> {
+                if (response == ButtonType.YES) {
+                    foodPlaces.remove(currentSelectedPlace);
+                    DataStorage.saveFoodPlaces(foodPlaces);
+                    renderRestaurantGrid(foodPlaces);
+                    showMainScreen();
+                }
+            });
+        }
+    }
 
 
 
