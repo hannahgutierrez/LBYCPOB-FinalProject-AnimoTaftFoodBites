@@ -177,6 +177,24 @@ public class    FoodPlaceController {
                 "Pizza"
         ));
 
+        // ZUS Coffee
+        List<String> zusMenus = new ArrayList<>();
+        zusMenus.add("/images/zus/ZUSMenu.jpg");
+        foodPlaces.add(new Cafe(
+                "5", // Unique ID
+                "ZUS Coffee",
+                "CAFE",
+                "Unit No. 01-B Ground Floor, Taft, Taft Ave, Malate, 2507 Metro Manila",
+                "N/A",
+                "Operation Hours: 6 AM–10 PM",
+                "/images/zus/ZUSLogo.png",
+                "/images/zus/ZUSPlacePhoto.jpg",
+                zusMenus,
+                "https://maps.app.goo.gl/cVojKAWJbxAmR5uy7",
+                true // wifiAvailable
+        ));
+
+
 
 
 
