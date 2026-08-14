@@ -154,12 +154,9 @@ public class FoodPlaceController {
         renderRestaurantGrid(foodPlaces);
         updateAdminButtonUI();
     }
-    
 
-    @FXML
-    public void loginAdmin() {
-        String username = adminUsernameField.getText();
-        String password = adminPasswordField.getText();
+
+
 
 
         // Admin Credentials
