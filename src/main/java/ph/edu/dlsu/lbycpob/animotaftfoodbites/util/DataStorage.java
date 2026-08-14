@@ -42,4 +42,12 @@ public class DataStorage {
             return defaultUsers;
         }
 
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))) {
+            return (List<User>) ois.readObject();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ArrayList<>();
+        }
     }
+
+}
