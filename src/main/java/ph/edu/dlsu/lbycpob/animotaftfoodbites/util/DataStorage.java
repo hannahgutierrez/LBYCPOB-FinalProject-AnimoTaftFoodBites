@@ -33,4 +33,13 @@ public class DataStorage {
         }
     }
 
-}
+    @SuppressWarnings("unchecked")
+    public static List<User> loadUsers() {
+        File file = new File(USERS_FILE);
+        if (!file.exists()) {
+            List<User> defaultUsers = new ArrayList<>();
+            defaultUsers.add(new User("admin", "admin123")); // Default user
+            return defaultUsers;
+        }
+
+    }
