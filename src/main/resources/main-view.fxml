@@ -92,3 +92,13 @@
         <TextField fx:id="adminUsernameField" promptText="Username"/>
         <PasswordField fx:id="adminPasswordField" promptText="Password"/>
         <Label fx:id="loginErrorLabel" textFill="red" visible="false"/>
+
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="Login" onAction="#loginAdmin"/>
+            <Button text="Cancel" onAction="#closeLoginModal"/>
+        </HBox>
+
+
+        <!-- Link to Switch to Registration -->
+        <Hyperlink text="Don't have an account? Create one here" onAction="#openRegisterModal"/>
+    </VBox>
