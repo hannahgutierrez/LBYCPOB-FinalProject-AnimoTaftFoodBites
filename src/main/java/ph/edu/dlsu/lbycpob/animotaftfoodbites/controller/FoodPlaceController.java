@@ -68,6 +68,11 @@ public class    FoodPlaceController {
     private FoodPlace currentSelectedPlace;
     private int currentMenuIndex = 0;
 
+    // Auth State
+    private boolean isLoggedIn = false;
+    private User currentUser = null;
+
+
 
 
     @FXML
