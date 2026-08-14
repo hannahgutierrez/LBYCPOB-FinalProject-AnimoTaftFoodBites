@@ -25,4 +25,12 @@ public class DataStorage {
         }
     }
 
+    public static void saveFoodPlaces(List<FoodPlace> list) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(FOOD_PLACES_FILE))) {
+            oos.writeObject(list);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 }
