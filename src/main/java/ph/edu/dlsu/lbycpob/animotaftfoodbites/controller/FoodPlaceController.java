@@ -40,6 +40,12 @@ public class    FoodPlaceController {
     @FXML
     private Label loginErrorLabel;
 
+    // Register Controls
+    @FXML private TextField regUsernameField;
+    @FXML private PasswordField regPasswordField;
+    @FXML private PasswordField regConfirmPasswordField;
+    @FXML private Label regErrorLabel;
+
     //Details Controls
     @FXML
     private Label detailNameLabel, detailHoursLabel, detailContactLabel, detailAddressLabel;
