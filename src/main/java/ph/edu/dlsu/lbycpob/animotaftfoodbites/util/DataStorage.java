@@ -11,4 +11,10 @@ import java.util.List;
 public class DataStorage {
     private static final String FOOD_PLACES_FILE = "food_places.dat";
     private static final String USERS_FILE = "users.dat";
-}
+
+    @SuppressWarnings("unchecked")
+    public static List<FoodPlace> loadFoodPlaces() {
+        File file = new File(FOOD_PLACES_FILE);
+        if (!file.exists()) return new ArrayList<>();
+
+    }
