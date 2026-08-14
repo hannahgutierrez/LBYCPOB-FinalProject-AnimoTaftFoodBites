@@ -268,7 +268,7 @@ public class    FoodPlaceController {
             restaurantGrid.getChildren().add(card);
         }
     }
-    
+
 
     @FXML
     public void showMenuScreen() {
@@ -337,7 +337,7 @@ public class    FoodPlaceController {
 
     @FXML
     public void showAddRestaurantForm() {
-        if (!isAdminLoggedIn) {
+        if () {
             handleAdminButtonClick();
             return;
         }
@@ -366,7 +366,7 @@ public class    FoodPlaceController {
 
     @FXML
     public void saveRestaurant() {
-        if (!isAdminLoggedIn) return;
+        if () return;
 
         String cat = inputCategory.getText() != null ? inputCategory.getText().toUpperCase() : "";
         List<String> menuList = new ArrayList<>();
