@@ -268,23 +268,7 @@ public class    FoodPlaceController {
             restaurantGrid.getChildren().add(card);
         }
     }
-
-    //Place Details
-    private void showDetailsScreen(FoodPlace place) {
-        this.currentSelectedPlace = place;
-        detailNameLabel.setText(place.getName());
-        detailHoursLabel.setText("• " + place.getOpeningHours());
-        detailContactLabel.setText("• Contact Number: " + place.getContactInfo());
-        detailAddressLabel.setText("• Address: " + place.getAddress());
-
-        Image logoImg = loadImage(place.getLogoPath());
-        if (logoImg != null) detailLogoImageView.setImage(logoImg);
-
-        Image storeImg = loadImage(place.getStoreImagePath());
-        if (storeImg != null) detailStoreImageView.setImage(storeImg);
-
-        switchScreen(detailsScreen);
-    }
+    
 
     @FXML
     public void showMenuScreen() {
