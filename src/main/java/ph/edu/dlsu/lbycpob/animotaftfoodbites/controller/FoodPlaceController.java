@@ -156,16 +156,7 @@ public class FoodPlaceController {
     }
 
 
-
-
-
-
-        } else {
-            loginErrorLabel.setText("Invalid username or password!");
-            loginErrorLabel.setVisible(true);
-        }
-    }
-
+    
     @FXML
     public void closeLoginModal() {
         loginModal.setVisible(false);
