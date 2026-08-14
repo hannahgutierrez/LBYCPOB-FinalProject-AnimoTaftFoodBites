@@ -58,6 +58,17 @@ public class    FoodPlaceController {
     @FXML
     private ImageView menuImageView;
 
+    // Form Controls
+    @FXML private TextField inputName, inputCategory, inputAddress, inputHours, inputContact, inputMapUrl;
+    private String uploadedLogoPath, uploadedStorePath, uploadedMenuPath;
+
+    private List<FoodPlace> foodPlaces = new ArrayList<>();
+    private List<User> users = new ArrayList<>();
+
+    private FoodPlace currentSelectedPlace;
+    private int currentMenuIndex = 0;
+
+
 
     @FXML
     public void initialize() {
