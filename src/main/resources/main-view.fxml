@@ -28,7 +28,9 @@
 
     <!-- 2. RESTAURANT DETAILS SCREEN -->
     <VBox fx:id="detailsScreen" visible="false" alignment="TOP_CENTER" spacing="15" maxWidth="700" maxHeight="500" styleClass="card-panel">
-        <HBox alignment="CENTER_RIGHT">
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <!-- Added Delete Button here -->
+            <Button fx:id="deletePlaceButton" text="🗑 Delete" onAction="#deleteCurrentPlace" styleClass="pill-button" style="-fx-background-color: #ff4d4d; -fx-text-fill: white;"/>
             <Button text="✕ Back" onAction="#showMainScreen" styleClass="pill-button"/>
         </HBox>
         <Label fx:id="detailNameLabel" styleClass="card-title" style="-fx-font-size: 20px;"/>
