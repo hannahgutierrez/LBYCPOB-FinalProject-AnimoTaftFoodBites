@@ -93,35 +93,30 @@
         <PasswordField fx:id="adminPasswordField" promptText="Password"/>
         <Label fx:id="loginErrorLabel" textFill="red" visible="false"/>
 
-
         <HBox spacing="10" alignment="CENTER">
             <Button text="Login" onAction="#loginAdmin"/>
             <Button text="Cancel" onAction="#closeLoginModal"/>
         </HBox>
 
-
         <!-- Link to Switch to Registration -->
         <Hyperlink text="Don't have an account? Create one here" onAction="#openRegisterModal"/>
     </VBox>
 
-
     <!-- REGISTER MODAL -->
-    <VBox fx:id="registerModal" visible="false" spacing="10" alignment="CENTER" styleClass="modal-box">
-        <Label text="Create New Account" styleClass="modal-title"/>
-        <TextField fx:id="regUsernameField" promptText="Enter Username"/>
-        <PasswordField fx:id="regPasswordField" promptText="Enter Password"/>
-        <PasswordField fx:id="regConfirmPasswordField" promptText="Confirm Password"/>
-        <Label fx:id="regErrorLabel" textFill="red" visible="false"/>
+    <VBox fx:id="registerModal" visible="false" alignment="CENTER" styleClass="modal-overlay">
+        <VBox spacing="12" alignment="CENTER" maxWidth="380" styleClass="modal-card">
+            <Label text="Create New Account" styleClass="modal-title"/>
+            <TextField fx:id="regUsernameField" promptText="Enter Username" maxWidth="300"/>
+            <PasswordField fx:id="regPasswordField" promptText="Enter Password" maxWidth="300"/>
+            <PasswordField fx:id="regConfirmPasswordField" promptText="Confirm Password" maxWidth="300"/>
+            <Label fx:id="regErrorLabel" textFill="red" visible="false"/>
 
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="Register Account" onAction="#registerUser" styleClass="pill-button"/>
+                <Button text="Cancel" onAction="#closeRegisterModal" styleClass="pill-button"/>
+            </HBox>
 
-        <HBox spacing="10" alignment="CENTER">
-            <Button text="Register Account" onAction="#registerUser"/>
-            <Button text="Cancel" onAction="#closeRegisterModal"/>
-        </HBox>
-
-
-        <Hyperlink text="Already have an account? Log in" onAction="#handleAdminButtonClick"/>
+            <Hyperlink text="Already have an account? Log in" onAction="#handleAdminButtonClick"/>
+        </VBox>
     </VBox>
-
-
 </StackPane>
