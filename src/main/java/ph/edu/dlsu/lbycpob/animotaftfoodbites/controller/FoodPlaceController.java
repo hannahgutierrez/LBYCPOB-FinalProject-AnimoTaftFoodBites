@@ -259,7 +259,7 @@ public class FoodPlaceController {
             });
         }
     }
-    
+
     //Category
     private void filterCategory() {
         String selected = categoryFilter.getValue();
@@ -395,7 +395,7 @@ public class FoodPlaceController {
 
     @FXML
     public void saveRestaurant() {
-        if () return;
+        if (!isLoggedIn) return;
 
         String cat = inputCategory.getText() != null ? inputCategory.getText().toUpperCase() : "";
         List<String> menuList = new ArrayList<>();
@@ -437,4 +437,13 @@ public class FoodPlaceController {
         }
     }
 
+    private void switchScreen(VBox targetScreen) {
+        mainScreen.setVisible(false);
+        detailsScreen.setVisible(false);
+        menuScreen.setVisible(false);
+        addFormScreen.setVisible(false);
+        if (loginModal != null) loginModal.setVisible(false);
+        if (registerModal != null) registerModal.setVisible(false);
+        targetScreen.setVisible(true);
+    }
 }
