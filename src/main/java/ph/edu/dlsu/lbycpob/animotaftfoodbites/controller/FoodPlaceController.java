@@ -21,8 +21,10 @@ import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
-public class    FoodPlaceController {
+public class FoodPlaceController {
 
+    //Screens & Modals
+    @FXML private VBox mainScreen, detailsScreen, menuScreen, addFormScreen, loginModal, registerModal;
 
     //Main Directory Controls
     @FXML
@@ -40,17 +42,23 @@ public class    FoodPlaceController {
     @FXML
     private Label loginErrorLabel;
 
-    // Register Controls
-    @FXML private TextField regUsernameField;
-    @FXML private PasswordField regPasswordField;
-    @FXML private PasswordField regConfirmPasswordField;
-    @FXML private Label regErrorLabel;
+    //Register Controls
+    @FXML
+    private TextField regUsernameField;
+    @FXML
+    private PasswordField regPasswordField;
+    @FXML
+    private PasswordField regConfirmPasswordField;
+    @FXML
+    private Label regErrorLabel;
 
     //Details Controls
     @FXML
     private Label detailNameLabel, detailHoursLabel, detailContactLabel, detailAddressLabel;
     @FXML
     private ImageView detailLogoImageView, detailStoreImageView;
+    @FXML
+    private Button deletePlaceButton;
 
     //Menu Screen Controls
     @FXML
@@ -59,7 +67,8 @@ public class    FoodPlaceController {
     private ImageView menuImageView;
 
     // Form Controls
-    @FXML private TextField inputName, inputCategory, inputAddress, inputHours, inputContact, inputMapUrl;
+    @FXML
+    private TextField inputName, inputCategory, inputAddress, inputHours, inputContact, inputMapUrl;
     private String uploadedLogoPath, uploadedStorePath, uploadedMenuPath;
 
     private List<FoodPlace> foodPlaces = new ArrayList<>();
@@ -67,13 +76,6 @@ public class    FoodPlaceController {
 
     private FoodPlace currentSelectedPlace;
     private int currentMenuIndex = 0;
-
-    // Auth State
-    private boolean isLoggedIn = false;
-    private User currentUser = null;
-
-
-
 
     @FXML
     public void initialize() {
