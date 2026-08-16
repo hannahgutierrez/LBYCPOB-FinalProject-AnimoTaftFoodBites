@@ -217,6 +217,7 @@ public class FoodPlaceController {
             loginErrorLabel.setVisible(true);
         }
     }
+
     //Authentication
     @FXML
     public void handleAdminButtonClick() {
@@ -230,11 +231,16 @@ public class FoodPlaceController {
         }
     }
 
+    @FXML
+    public void closeLoginModal() {
+        loginModal.setVisible(false);
+    }
+
     private void updateAdminButtonUI() {
-        if (isAdminLoggedIn) {
+        if (isLoggedIn) {
             adminAuthButton.setText("+ Add Restaurant");
         } else {
-            adminAuthButton.setText("🔑 Admin Login");
+            adminAuthButton.setText("🔑 Login / Register");
         }
     }
 
@@ -253,10 +259,8 @@ public class FoodPlaceController {
             });
         }
     }
-
-
-
-            //Category
+    
+    //Category
     private void filterCategory() {
         String selected = categoryFilter.getValue();
         if (selected == null || selected.equals("ALL")) {
