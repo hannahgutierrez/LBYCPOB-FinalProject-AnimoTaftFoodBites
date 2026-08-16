@@ -297,19 +297,27 @@ public class FoodPlaceController {
         loginErrorLabel.setVisible(true);
     }
 
-    //Remove or delete food place
+    //Delete a foodplace
     @FXML
     public void deleteCurrentPlace() {
+        // Allows deletion if a place is selected and user is logged in
         if (currentSelectedPlace != null && isLoggedIn) {
-            Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure this place has closed and should be removed?", ButtonType.YES, ButtonType.NO);
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION,
+                    "Are you sure you want to delete " + currentSelectedPlace.getName() + "?",
+                    ButtonType.YES, ButtonType.NO);
+
             alert.showAndWait().ifPresent(response -> {
                 if (response == ButtonType.YES) {
                     foodPlaces.remove(currentSelectedPlace);
                     DataStorage.saveFoodPlaces(foodPlaces);
+                    currentSelectedPlace = null;
                     renderRestaurantGrid(foodPlaces);
                     showMainScreen();
                 }
             });
+        } else if (!isLoggedIn) {
+            Alert alert = new Alert(Alert.AlertType.WARNING, "You must be logged in to delete a place.", ButtonType.OK);
+            alert.showAndWait();
         }
     }
 
