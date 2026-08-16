@@ -84,11 +84,9 @@ public class FoodPlaceController {
             categoryFilter.setOnAction(e -> filterCategory());
         }
 
-
         // Load persisted data
         users = DataStorage.loadUsers();
         foodPlaces = DataStorage.loadFoodPlaces();
-
 
         // Seed default items if empty on initial launch
         if (foodPlaces.isEmpty()) {
@@ -96,8 +94,7 @@ public class FoodPlaceController {
             DataStorage.saveFoodPlaces(foodPlaces);
         }
 
-
-        renderRestaurantGrid(foodPlaces);n
+        renderRestaurantGrid(foodPlaces);
         updateAdminButtonUI();
     }
 
@@ -195,16 +192,6 @@ public class FoodPlaceController {
                 "https://maps.app.goo.gl/cVojKAWJbxAmR5uy7",
                 true // wifiAvailable
         ));
-
-
-
-
-
-
-
-
-
-
 
 
         private void updateAdminButtonUI() {
