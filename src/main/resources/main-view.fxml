@@ -87,19 +87,20 @@
     </VBox>
 
     <!-- 5. ADMIN LOGIN MODAL OVERLAY -->
-    <VBox fx:id="loginModal" visible="false" spacing="10" alignment="CENTER" styleClass="modal-box">
-        <Label text="User Login" styleClass="modal-title"/>
-        <TextField fx:id="adminUsernameField" promptText="Username"/>
-        <PasswordField fx:id="adminPasswordField" promptText="Password"/>
-        <Label fx:id="loginErrorLabel" textFill="red" visible="false"/>
+    <VBox fx:id="loginModal" visible="false" alignment="CENTER" styleClass="modal-overlay">
+        <VBox spacing="12" alignment="CENTER" maxWidth="380" styleClass="modal-card">
+            <Label text="User Login" styleClass="modal-title"/>
+            <TextField fx:id="adminUsernameField" promptText="Username" maxWidth="300"/>
+            <PasswordField fx:id="adminPasswordField" promptText="Password" maxWidth="300"/>
+            <Label fx:id="loginErrorLabel" textFill="red" visible="false"/>
 
-        <HBox spacing="10" alignment="CENTER">
-            <Button text="Login" onAction="#loginAdmin"/>
-            <Button text="Cancel" onAction="#closeLoginModal"/>
-        </HBox>
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="Login" onAction="#loginAdmin" styleClass="pill-button"/>
+                <Button text="Cancel" onAction="#closeLoginModal" styleClass="pill-button"/>
+            </HBox>
 
-        <!-- Link to Switch to Registration -->
-        <Hyperlink text="Don't have an account? Create one here" onAction="#openRegisterModal"/>
+            <Hyperlink text="Don't have an account? Create one here" onAction="#openRegisterModal"/>
+        </VBox>
     </VBox>
 
     <!-- REGISTER MODAL -->
