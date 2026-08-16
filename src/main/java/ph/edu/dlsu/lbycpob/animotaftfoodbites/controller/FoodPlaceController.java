@@ -157,7 +157,7 @@ public class FoodPlaceController {
                 "Fast Food"
         ));
 
-        // Domino's Pizza
+        //Domino's Pizza
         List<String> dominosMenus = new ArrayList<>();
         for (int i = 1; i <= 10; i++) {
             dominosMenus.add("/images/Dominos/DominosMenu" + i + ".png");
@@ -176,7 +176,7 @@ public class FoodPlaceController {
                 "Pizza"
         ));
 
-        // ZUS Coffee
+        //ZUS Coffee
         List<String> zusMenus = new ArrayList<>();
         zusMenus.add("/images/zus/ZUSMenu.jpg");
         foodPlaces.add(new Cafe(
@@ -192,7 +192,7 @@ public class FoodPlaceController {
                 "https://maps.app.goo.gl/cVojKAWJbxAmR5uy7",
                 true // wifiAvailable
         ));
-
+    }
 
         private void updateAdminButtonUI() {
         if (isAdminLoggedIn) {
