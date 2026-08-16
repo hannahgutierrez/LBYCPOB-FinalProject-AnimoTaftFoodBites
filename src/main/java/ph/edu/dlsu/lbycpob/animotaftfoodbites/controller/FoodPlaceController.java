@@ -366,7 +366,7 @@ public class FoodPlaceController {
 
     @FXML
     public void showAddRestaurantForm() {
-        if () {
+        if (!isLoggedIn) {
             handleAdminButtonClick();
             return;
         }
