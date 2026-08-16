@@ -197,6 +197,26 @@ public class FoodPlaceController {
         ));
     }
 
+    @FXML
+    public void loginAdmin() {
+        String username = adminUsernameField.getText();
+        String password = adminPasswordField.getText();
+
+
+        boolean authenticated = users.stream()
+                .anyMatch(u -> u.getUsername().equals(username) && u.getPassword().equals(password));
+
+
+        if (authenticated) {
+            isLoggedIn = true;
+            loginModal.setVisible(false);
+            updateAdminButtonUI();
+            showAddRestaurantForm();
+        } else {
+            loginErrorLabel.setText("Invalid username or password!");
+            loginErrorLabel.setVisible(true);
+        }
+    }
     //Authentication
     @FXML
     public void handleAdminButtonClick() {
@@ -218,7 +238,7 @@ public class FoodPlaceController {
         }
     }
 
-    //  Remove / delete food place
+    //Remove or delete food place
     @FXML
     public void deleteCurrentPlace() {
         if (currentSelectedPlace != null && isLoggedIn) {
