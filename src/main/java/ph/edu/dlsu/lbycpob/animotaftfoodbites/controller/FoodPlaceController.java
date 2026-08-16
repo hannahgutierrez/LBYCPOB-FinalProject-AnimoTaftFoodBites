@@ -244,6 +244,16 @@ public class FoodPlaceController {
         }
     }
 
+    @FXML
+    public void openRegisterModal() {
+        loginModal.setVisible(false);
+        regUsernameField.clear();
+        regPasswordField.clear();
+        regConfirmPasswordField.clear();
+        regErrorLabel.setVisible(false);
+        registerModal.setVisible(true);
+    }
+
     //Remove or delete food place
     @FXML
     public void deleteCurrentPlace() {
