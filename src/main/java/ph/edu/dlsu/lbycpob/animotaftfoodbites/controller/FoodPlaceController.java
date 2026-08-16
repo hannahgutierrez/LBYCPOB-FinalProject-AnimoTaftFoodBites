@@ -259,6 +259,44 @@ public class FoodPlaceController {
         registerModal.setVisible(false);
     }
 
+    @FXML
+    public void registerUser() {
+        String username = regUsernameField.getText() != null ? regUsernameField.getText().trim() : "";
+        String password = regPasswordField.getText() != null ? regPasswordField.getText().trim() : "";
+        String confirmPass = regConfirmPasswordField.getText() != null ? regConfirmPasswordField.getText().trim() : "";
+
+        //Validation
+        if (username.isEmpty() || password.isEmpty()) {
+            regErrorLabel.setText("Username and password cannot be empty!");
+            regErrorLabel.setVisible(true);
+            return;
+        }
+        if (!password.equals(confirmPass)) {
+            regErrorLabel.setText("Passwords do not match!");
+            regErrorLabel.setVisible(true);
+            return;
+        }
+
+        //Check if username already exists
+        boolean userExists = users.stream().anyMatch(u -> u.getUsername().equalsIgnoreCase(username));
+        if (userExists) {
+            regErrorLabel.setText("Username is already taken!");
+            regErrorLabel.setVisible(true);
+            return;
+        }
+        //Register user and save to persistent storage
+        User newUser = new User(username, password);
+        users.add(newUser);
+        DataStorage.saveUsers(users);
+
+        //Switch back to login
+        registerModal.setVisible(false);
+        loginModal.setVisible(true);
+        adminUsernameField.setText(username);
+        loginErrorLabel.setText("Account created! Please log in.");
+        loginErrorLabel.setVisible(true);
+    }
+
     //Remove or delete food place
     @FXML
     public void deleteCurrentPlace() {
