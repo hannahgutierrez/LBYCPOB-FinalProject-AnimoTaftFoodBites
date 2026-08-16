@@ -254,6 +254,11 @@ public class FoodPlaceController {
         registerModal.setVisible(true);
     }
 
+    @FXML
+    public void closeRegisterModal() {
+        registerModal.setVisible(false);
+    }
+
     //Remove or delete food place
     @FXML
     public void deleteCurrentPlace() {
