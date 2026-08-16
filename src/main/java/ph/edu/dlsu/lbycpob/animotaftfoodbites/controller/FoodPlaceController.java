@@ -77,6 +77,9 @@ public class FoodPlaceController {
     private FoodPlace currentSelectedPlace;
     private int currentMenuIndex = 0;
 
+    private boolean isLoggedIn = false;
+    private User currentUser = null;
+
     @FXML
     public void initialize() {
         if (categoryFilter != null) {
@@ -194,7 +197,20 @@ public class FoodPlaceController {
         ));
     }
 
-        private void updateAdminButtonUI() {
+    //Authentication
+    @FXML
+    public void handleAdminButtonClick() {
+        if (isLoggedIn) {
+            showAddRestaurantForm();
+        } else {
+            adminUsernameField.clear();
+            adminPasswordField.clear();
+            loginErrorLabel.setVisible(false);
+            loginModal.setVisible(true);
+        }
+    }
+
+    private void updateAdminButtonUI() {
         if (isAdminLoggedIn) {
             adminAuthButton.setText("+ Add Restaurant");
         } else {
