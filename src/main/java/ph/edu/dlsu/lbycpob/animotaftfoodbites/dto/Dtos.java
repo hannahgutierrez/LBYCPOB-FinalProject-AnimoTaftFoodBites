@@ -9,25 +9,6 @@ import java.util.UUID;
 
 public class Dtos {
 
-    public record FoodPlaceCard(
-            UUID id,
-            String name,
-            String category,
-            String foodType,
-            String logoUrl,
-            String operationHours
-    ) {
-        public static FoodPlaceCard of(FoodPlaceEntity entity) {
-            return new FoodPlaceCard(
-                    entity.getId(),
-                    entity.getName(),
-                    entity.getCategory(),
-                    entity.getFoodType(),
-                    entity.getLogoUrl(),
-                    entity.getOperationHours()
-            );
-        }
-    }
 
     public record FoodPlaceDetail(
             UUID id,
