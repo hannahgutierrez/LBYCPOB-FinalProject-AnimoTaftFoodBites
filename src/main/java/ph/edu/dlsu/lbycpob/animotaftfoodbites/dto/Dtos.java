@@ -9,26 +9,6 @@ import java.util.UUID;
 
 public class Dtos {
 
-
-
-    public record MenuItemDto(
-            UUID id,
-            String name,
-            String description,
-            BigDecimal price,
-            String imageUrl
-    ) {
-        public static MenuItemDto of(MenuItemEntity entity) {
-            return new MenuItemDto(
-                    entity.getId(),
-                    entity.getName(),
-                    entity.getDescription(),
-                    entity.getPrice(),
-                    entity.getImageUrl()
-            );
-        }
-    }
-
     public record FoodPlaceCard(
             UUID id,
             String name,
