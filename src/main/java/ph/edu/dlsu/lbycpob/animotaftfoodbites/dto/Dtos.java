@@ -11,13 +11,6 @@ public class Dtos {
 
 
 
-    public record CreateMenuItemRequest(
-            String name,
-            String description,
-            BigDecimal price,
-            String imageUrl
-    ) {}
-
     public record MenuItemDto(
             UUID id,
             String name,
