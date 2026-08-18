@@ -7,16 +7,7 @@ import java.util.stream.Collectors;
 
 public class FoodPlaceRepository {
 
-    public List<FoodPlaceEntity> findByCategoryIgnoreCaseOrderByNameAsc(String category) {
-        return database.values().stream()
-                .filter(p -> p.getCategory() != null &&
-                        p.getCategory().equalsIgnoreCase(category))
-                .sorted(Comparator.comparing(
-                        FoodPlaceEntity::getName,
-                        String.CASE_INSENSITIVE_ORDER
-                ))
-                .collect(Collectors.toList());
-    }
+
 
     public Optional<FoodPlaceEntity> findById(UUID id) {
         return Optional.ofNullable(database.get(id));
